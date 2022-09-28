@@ -1,8 +1,10 @@
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import "./index.css";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Main from "./components/Main";
 import Header from "./components/Header";

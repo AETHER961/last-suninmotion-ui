@@ -22,8 +22,6 @@ const Benefits = () => {
 
     if (accRowIndex === 3) {
       completeOneRound = true;
-      accRowIndex = 0;
-      setScrollingIndex(0);
       window.removeEventListener("wheel", preventDefault, { passive: false });
       benefitsSection.removeEventListener("wheel", handleScroll, {
         passive: false,

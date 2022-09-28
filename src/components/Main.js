@@ -5,6 +5,8 @@ import Benefits from "./Benefits";
 import Team from "./Team";
 import Footer from "./Footer";
 import GradientDevider from "./GradientDevider";
+import Collection from "./Collection";
+import Roadmap from "./Roadmap";
 
 const Main = () => {
   return (
@@ -12,6 +14,8 @@ const Main = () => {
       <Welcome />
       <Story />
       <Benefits />
+      <Collection />
+      <Roadmap />
       <Team />
       <GradientDevider />
       <Footer />
