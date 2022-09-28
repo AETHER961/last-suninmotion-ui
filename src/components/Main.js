@@ -4,6 +4,7 @@ import Story from "./Story";
 import Benefits from "./Benefits";
 import Team from "./Team";
 import Footer from "./Footer";
+import GradientDevider from "./GradientDevider";
 
 const Main = () => {
   return (
@@ -12,6 +13,7 @@ const Main = () => {
       <Story />
       <Benefits />
       <Team />
+      <GradientDevider />
       <Footer />
     </section>
   );
