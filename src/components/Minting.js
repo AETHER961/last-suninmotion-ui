@@ -21,6 +21,7 @@ const Minting = () => {
     }
 
     const accounts = await ethereum.request({ method: "eth_accounts" });
+
     if (accounts.length !== 0) {
       const account = accounts[0];
       console.log("Found a valid account ", account);
@@ -34,6 +35,7 @@ const Minting = () => {
     if (!ethereum) {
       alert("Please install Metamask!");
     }
+
     try {
       const accounts = await ethereum.request({
         method: "eth_requestAccounts",
@@ -121,6 +123,7 @@ const Minting = () => {
     }
   };
   useEffect(() => {
+    checkWalletIsConnected();
     //  getOwnNfts();
   }, []);
 
