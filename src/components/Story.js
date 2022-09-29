@@ -4,7 +4,7 @@ import storyImage from "../assets/antennas.png";
 
 const Story = () => {
   return (
-    <section className="storySection px-2 position-relative">
+    <section id="storySection" className="storySection px-2 position-relative">
       <div className="row m-0">
         <div className="col-12 col-lg-7 col-xl-9 px-0 pb-5">
           <h1 className="storyTitle">

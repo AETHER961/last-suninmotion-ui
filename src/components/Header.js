@@ -1,11 +1,19 @@
 import React, { useEffect, useState } from "react";
 import { Container, Nav, Navbar, Offcanvas } from "react-bootstrap";
 import logo from "../assets/logo.png";
+import { HashLink } from "react-router-hash-link";
 
 const Header = () => {
   const [show, setShow] = useState(false);
   const [withBg, setWithBg] = useState(false);
   const [showConnect, setShowConnect] = useState(true);
+
+  const [clicked, setClicked] = useState(9);
+
+  const onClick = (index) => {
+    setClicked(index);
+    setShow(false);
+  };
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
@@ -94,14 +102,56 @@ const Header = () => {
             </Offcanvas.Title>
           </Offcanvas.Header>
           <Offcanvas.Body>
-            <Nav className="offcanvasLinksContainer my-2 my-lg-0">
-              <Nav.Link href="#action1">Story</Nav.Link>
-              <Nav.Link href="#action2">Benefits</Nav.Link>
-              <Nav.Link href="#action3">Collection</Nav.Link>
-              <Nav.Link href="#action4">Road Map</Nav.Link>
-              <Nav.Link href="#action5">Team</Nav.Link>
-              <Nav.Link href="#action6">Mint</Nav.Link>
-            </Nav>
+            <div className="offcanvasLinksContainer my-2 my-lg-0">
+              <HashLink
+                smooth
+                to="/#storySection"
+                className={`${clicked === 1 ? "selectedLink" : ""}`}
+                onClick={() => onClick(1)}
+              >
+                Story
+              </HashLink>
+              <HashLink
+                smooth
+                to="/#benefitsSection"
+                className={`${clicked === 2 ? "selectedLink" : ""}`}
+                onClick={() => onClick(2)}
+              >
+                Benefits
+              </HashLink>
+              <HashLink
+                smooth
+                to="/#collectionSection"
+                className={`${clicked === 3 ? "selectedLink" : ""}`}
+                onClick={() => onClick(3)}
+              >
+                Collection
+              </HashLink>
+              <HashLink
+                smooth
+                to="/#roadmapSection"
+                className={`${clicked === 4 ? "selectedLink" : ""}`}
+                onClick={() => onClick(4)}
+              >
+                Road Map
+              </HashLink>
+              <HashLink
+                smooth
+                to="/#teamSection"
+                className={`${clicked === 5 ? "selectedLink" : ""}`}
+                onClick={() => onClick(5)}
+              >
+                Team
+              </HashLink>
+              <HashLink
+                smooth
+                to="/mymints"
+                className={`${clicked === 6 ? "selectedLink" : ""}`}
+                onClick={() => onClick(6)}
+              >
+                My Mints
+              </HashLink>
+            </div>
           </Offcanvas.Body>
         </Offcanvas>
       </Container>

@@ -2,7 +2,7 @@ import React from "react";
 
 const Roadmap = () => {
   return (
-    <section className="roadmapSection">
+    <section id="roadmapSection" className="roadmapSection">
       <div id="roadmap" className="wrapper my-pagination-section hiveBg">
         <div className="center-line"></div>
         <div className="row row-2">

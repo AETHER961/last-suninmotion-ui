@@ -66,7 +66,7 @@ const Collection = () => {
   ];
 
   return (
-    <div className="collectionSection position-relative">
+    <div id="collectionSection" className="collectionSection position-relative">
       <div className="position-absolute text-end collHeaderText">
         <h1>
           Released

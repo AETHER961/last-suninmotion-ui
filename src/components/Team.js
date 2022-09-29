@@ -3,7 +3,7 @@ import zalme from "../assets/zalme.png";
 
 const Team = () => {
   return (
-    <section className="teamSection px-2 position-relative">
+    <section id="teamSection" className="teamSection px-2 position-relative">
       <div className="row m-0 pb-0">
         <h1 className="teamTitle">The Team</h1>
         <span className="teamSubTitle">

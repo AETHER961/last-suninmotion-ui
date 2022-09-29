@@ -65,4 +65,10 @@ html {
   align-items: center;
   text-transform: capitalize;
   color: #828193;
+  text-decoration: none;
+}
+
+.selectedLink {
+  color: black !important;
+  font-weight: 600;
 }

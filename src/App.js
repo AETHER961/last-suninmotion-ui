@@ -14,8 +14,8 @@ import Minting from "./components/Minting";
 function App(props) {
   return (
     <div className="App">
-      <Header />
       <BrowserRouter>
+        <Header />
         <Routes>
           <Route path="/" element={<Main {...props} />} />
           <Route path="/minting" element={<Minting {...props} />} />
