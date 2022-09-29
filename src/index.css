@@ -1,25 +1,25 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
 @font-face {
   font-family: Avenir;
-  src: url('./assets/fonts/avenir-regular.otf');
+  src: url("./assets/fonts/avenir-regular.otf");
 }
 
 @font-face {
   font-family: SF_Compact;
-  src: url('./assets/fonts/sfcompact.ttf');
+  src: url("./assets/fonts/sfcompact.ttf");
 }
 
 section {
@@ -36,7 +36,7 @@ section {
 /* welcome section ************************************************************************************* */
 
 .welcomeSection {
-  background-image: url('./assets/background.png');
+  background-image: url("./assets/background.png");
   background-size: 100% 140%;
   background-repeat: no-repeat;
   z-index: 10;
@@ -73,7 +73,7 @@ section {
 
 .welcomeBgPill {
   max-width: 400px;
-  background-image: url('./assets/orange.png');
+  background-image: url("./assets/orange.png");
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -102,7 +102,6 @@ section {
 }
 
 @keyframes fadeIn {
-
   0%,
   100% {
     opacity: 0;
@@ -132,7 +131,7 @@ section {
   font-weight: 800;
   font-size: clamp(40px, 60px + 1vw, 88px);
   line-height: clamp(60px, 80px + 1vw, 104px);
-  background: linear-gradient(93.75deg, #9BC354 -0.99%, #50AE98 100%);
+  background: linear-gradient(93.75deg, #9bc354 -0.99%, #50ae98 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -191,7 +190,7 @@ section {
 .benefitNbr {
   font-size: clamp(25px, 30px + 1vw, 48px);
   font-weight: 700;
-  background: -webkit-linear-gradient(#76DBB3, #69BCF1);
+  background: -webkit-linear-gradient(#76dbb3, #69bcf1);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -240,7 +239,7 @@ section {
 }
 
 .unFocusedBenefitLabel {
-  font-family: 'Avenir';
+  font-family: "Avenir";
   font-style: normal;
   font-weight: 800;
   line-height: 1.2;
@@ -308,23 +307,23 @@ section {
 }
 
 .bg1 {
-  background-image: url('./assets/greenPill.svg');
+  background-image: url("./assets/greenPill.svg");
 }
 
 .bg2 {
-  background-image: url('./assets/orangePill.svg');
+  background-image: url("./assets/orangePill.svg");
 }
 
 .bg3 {
-  background-image: url('./assets/darkbluePill.svg');
+  background-image: url("./assets/darkbluePill.svg");
 }
 
 .bg4 {
-  background-image: url('./assets/lightbluePill.svg');
+  background-image: url("./assets/lightbluePill.svg");
 }
 
 .bg5 {
-  background-image: url('./assets/violetPill.svg');
+  background-image: url("./assets/violetPill.svg");
 }
 
 .collSliderItemContainer img {
@@ -346,7 +345,7 @@ section {
   font-size: clamp(12px, 14px + 1vw, 28px);
   line-height: 1.2;
   text-align: right;
-  color: #F7CF86;
+  color: #f7cf86;
 }
 
 .roadTitle {
@@ -355,7 +354,7 @@ section {
   font-weight: 656;
   font-size: clamp(30px, 35px + 1vw, 56px);
   line-height: 1.5;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .roadDesc {
@@ -539,7 +538,6 @@ section {
   }
 }
 
-
 /* Team section ************************************************************************************* */
 
 .teamSection .row {
@@ -589,7 +587,7 @@ section {
 /* devider ************************************************************************************ */
 
 .gradientDevider {
-  background: linear-gradient(90deg, #9BC354 0.75%, #50AE98 100%);
+  background: linear-gradient(90deg, #9bc354 0.75%, #50ae98 100%);
   width: 100%;
   height: 7px;
 }
@@ -665,9 +663,11 @@ section {
 .mintingCardContainer {
   border-radius: 12px;
   background: url("./assets/hexbgBen.svg"),
-    linear-gradient(180deg,
+    linear-gradient(
+      180deg,
       rgba(27, 50, 49, 0.5) 0%,
-      rgba(27, 50, 49, 0.2) 100%);
+      rgba(27, 50, 49, 0.2) 100%
+    );
   flex-wrap: wrap;
   width: clamp(300px, 350px + 1vw, 420px);
   padding: 2%;
@@ -700,7 +700,7 @@ section {
   background-color: var(--dark-blue);
 }
 
-.my-mints>div {
+.my-mints > div {
   padding: 5% 11% 0;
 }
 
@@ -711,13 +711,15 @@ section {
   font-weight: 800;
   font-size: clamp(14px, 24px + 1vw, 32px);
   line-height: 1.2;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .explore-more {
-  background: linear-gradient(180deg,
-      rgba(27, 50, 49, 0.5) 0%,
-      rgba(27, 50, 49, 0.2) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(27, 50, 49, 0.5) 0%,
+    rgba(27, 50, 49, 0.2) 100%
+  );
   border-image: none;
   border: 0;
 }
@@ -728,7 +730,7 @@ section {
   font-weight: 800;
   font-size: clamp(14px, 24px + 1vw, 32px);
   line-height: 1.3;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .explore-more span {
@@ -929,4 +931,169 @@ section {
     letter-spacing: 2px;
     padding: 1rem;
   }
+}
+
+/* minting Section ************************************************************************************* */
+
+.minting-page {
+  background-color: #050427;
+  min-height: 100vh;
+}
+
+.minting-page > div {
+  padding-top: 8%;
+}
+
+@media (max-width: 450px) {
+  .mintingCardContainer {
+    width: 100%;
+    min-height: auto;
+    padding: 10% 5%;
+  }
+
+  .myMintsTitle {
+    margin-top: 25%;
+  }
+
+  .minting-page > div {
+    padding-top: 20%;
+  }
+}
+
+.mintingBoxContainer {
+  order: 1;
+}
+
+.mintingCarContainer {
+  order: 2;
+}
+
+.mintingLeftBox {
+  background: linear-gradient(
+    180deg,
+    rgba(27, 50, 49, 0.5) 0%,
+    rgba(27, 50, 49, 0.2) 100%
+  );
+  backdrop-filter: blur(46px);
+  border-radius: 16px;
+  margin: 12% 12% 12% 12%;
+  max-width: 400px;
+}
+
+.mintingLeftBox h1 {
+  font-family: avenir-regular;
+  font-weight: 800;
+  font-size: clamp(2rem, 2rem + 1.5vw, 3.5rem);
+  color: #ffffff;
+}
+
+.mintingLeftBox p {
+  font-family: avenir-regular;
+  font-weight: 400;
+  font-size: clamp(0.6rem, 0.6rem + 2vw, 1.2rem);
+  color: rgba(255, 255, 255, 0.62);
+}
+
+.mintingLeftBox:first-child > div {
+  align-self: center;
+}
+
+.mintingLeftBox:first-child > div > button {
+  background-color: #163049;
+  border-radius: 48px;
+  font-family: avenir-next-regular;
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 0.5rem;
+  width: 100%;
+  color: white;
+}
+
+.mintingLeftBox:first-child > div > div {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mintingLeftBox:first-child > div > div > p {
+  font-family: sf-compact;
+  font-size: clamp(3rem, 3rem + 2vw, 5rem);
+  background-color: linear-gradient(#9bc354, #50ae98);
+}
+
+@media screen and (max-width: 450px) {
+  .mintingSolim {
+    max-width: 350px;
+  }
+
+  .mintingLeftBox {
+    margin: 0 15px 20px;
+  }
+
+  .mintingBoxContainer {
+    order: 2;
+  }
+
+  .mintingCarContainer {
+    order: 1;
+    margin-top: 20px !important;
+  }
+
+  .mintingSlider .slick-prev {
+    top: 30%;
+    left: 0%;
+  }
+
+  .mintingSlider .slick-next {
+    top: 70%;
+    right: 7%;
+  }
+
+  .mintingSlider .slick-prev,
+  .mintingSlider .slick-next {
+    width: 70px !important;
+    height: 70px !important;
+    z-index: 10 !important;
+  }
+}
+
+.ratioo {
+  aspect-ratio: 1;
+  border-radius: 50%;
+  max-width: 60px;
+}
+
+.greenNbr {
+  font-family: "sf-compact";
+  color: #50ae98 !important;
+}
+
+.mintingSlider {
+  max-height: 100vh;
+}
+
+.mintingSlider .slick-slider {
+  text-align: center;
+  text-align: -moz-center;
+  text-align: -webkit-center;
+}
+
+.mintingSlider .slick-prev,
+.mintingSlider .slick-next {
+  width: 80px !important;
+  height: 80px !important;
+  z-index: 10 !important;
+}
+
+.mintingSlider .slick-prev {
+  top: 30%;
+  left: 15%;
+}
+
+.mintingSlider .slick-next {
+  top: 70%;
+  right: 20%;
+}
+
+.mintingSolim {
+  max-width: 500px;
 }
