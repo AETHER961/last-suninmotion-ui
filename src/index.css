@@ -123,6 +123,7 @@ section {
 }
 
 .storyImage {
+  position: absolute;
   bottom: 0;
   right: 0;
   max-width: 50%;
@@ -923,9 +924,10 @@ section {
   }
 
   .storyImage {
-    top: 60%;
+    /* top: 60%;
     right: 50%;
-    transform: translateX(50%);
+    transform: translateX(50%); */
+    position: relative;
     max-width: 100%;
   }
 

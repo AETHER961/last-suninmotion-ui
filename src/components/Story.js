@@ -40,7 +40,7 @@ const Story = () => {
           <img
             src={storyImage}
             alt="story insect image "
-            className="position-absolute storyImage"
+            className="storyImage"
           />
         </div>
       </div>
