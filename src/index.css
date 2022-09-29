@@ -660,6 +660,114 @@ section {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
+/* My Mints ************************************************************************************* */
+
+.mintingCardContainer {
+  border-radius: 12px;
+  background: url("./assets/hexbgBen.svg"),
+    linear-gradient(180deg,
+      rgba(27, 50, 49, 0.5) 0%,
+      rgba(27, 50, 49, 0.2) 100%);
+  flex-wrap: wrap;
+  width: clamp(300px, 350px + 1vw, 420px);
+  padding: 2%;
+  border-bottom: 7px solid transparent;
+  border-image: linear-gradient(to right, #d64d58, #2b2570);
+  border-image-slice: 1;
+  min-height: 450px;
+  color: rgba(255, 255, 255, 0.62);
+}
+
+.mintingCardImage {
+  width: clamp(10rem, 1rem + 20vw, 15rem);
+  align-self: center;
+}
+
+.mintCardName {
+  color: var(--white);
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 1.4;
+  font-size: clamp(14px, 24px + 1vw, 32px);
+}
+
+.cardGap {
+  gap: 4rem;
+}
+
+.my-mints {
+  background-color: var(--dark-blue);
+}
+
+.my-mints>div {
+  padding: 5% 11% 0;
+}
+
+.myMintsTitle {
+  margin-top: 5%;
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: 800;
+  font-size: clamp(14px, 24px + 1vw, 32px);
+  line-height: 1.2;
+  color: #FFFFFF;
+}
+
+.explore-more {
+  background: linear-gradient(180deg,
+      rgba(27, 50, 49, 0.5) 0%,
+      rgba(27, 50, 49, 0.2) 100%);
+  border-image: none;
+  border: 0;
+}
+
+.explore-more p {
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: 800;
+  font-size: clamp(14px, 24px + 1vw, 32px);
+  line-height: 1.3;
+  color: #FFFFFF;
+}
+
+.explore-more span {
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: 400;
+  font-size: clamp(10px, 14px + 1vw, 18px);
+  line-height: 1.2;
+  color: var(--gray);
+}
+
+.no-mints {
+  padding: 4rem;
+  gap: 0 !important;
+}
+
+.no-mints img {
+  margin-bottom: 3rem !important;
+}
+
+.p-no-mints {
+  font-family: Avenir;
+  color: #fff;
+  font-weight: 800;
+  font-size: clamp(14px, 24px + 1vw, 32px);
+  line-height: 1.3;
+}
+
+.p-you-didnt {
+  color: rgba(255, 255, 255, 0.42);
+  font-weight: 400;
+  font-size: clamp(10px, 12px + 1vw, 24px);
+}
+
+.mint-now {
+  font-weight: 700;
+  font-size: clamp(12px, 14px + 1vw, 25px);
+}
+
 /* media queries ************************************************************************************* */
 
 @media screen and (max-width: 1600px) {

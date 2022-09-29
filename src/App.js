@@ -8,7 +8,8 @@ import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Main from "./components/Main";
 import Header from "./components/Header";
-import MyMintings from "./components/MyMintings";
+import MyMintings from "./components/MyMints";
+import Minting from "./components/Minting";
 
 function App(props) {
   return (
@@ -17,10 +18,7 @@ function App(props) {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Main {...props} />} />
-          {/* <Route
-            path="/minting"
-            element={<Minting {...props}   />}
-          /> */}
+          <Route path="/minting" element={<Minting {...props} />} />
           <Route path="/mymints" element={<MyMintings {...props} />} />
         </Routes>
       </BrowserRouter>
