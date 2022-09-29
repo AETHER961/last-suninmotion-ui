@@ -21,7 +21,6 @@ const Minting = () => {
     }
 
     const accounts = await ethereum.request({ method: "eth_accounts" });
-
     if (accounts.length !== 0) {
       const account = accounts[0];
       console.log("Found a valid account ", account);
@@ -30,6 +29,7 @@ const Minting = () => {
       console.log("No valid account");
     }
   };
+
   const connectWalletHandler = async () => {
     if (!ethereum) {
       alert("Please install Metamask!");
@@ -44,6 +44,7 @@ const Minting = () => {
       console.log(err);
     }
   };
+
   const mintNftHandler = async () => {
     try {
       if (ethereum) {
@@ -74,13 +75,14 @@ const Minting = () => {
       console.log("err", err);
     }
   };
+
   const connectWalletButton = () => {
     return (
       <button
         onClick={connectWalletHandler}
         className="btn cta-button connect-wallet-button"
       >
-        Connect
+        Connect Wallet
       </button>
     );
   };
@@ -121,6 +123,7 @@ const Minting = () => {
   useEffect(() => {
     //  getOwnNfts();
   }, []);
+
   const toLocalFormat = (a) => {
     return a.toLocaleString("en-US", {
       minimumIntegerDigits: 2,

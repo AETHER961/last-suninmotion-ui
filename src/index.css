@@ -71,6 +71,10 @@ section {
   padding: 1rem 1.5rem;
 }
 
+.mintyourown p {
+  white-space: nowrap;
+}
+
 .welcomeBgPill {
   max-width: 400px;
   background-image: url("./assets/orange.png");
@@ -89,12 +93,11 @@ section {
 }
 
 .mobileWelcomeInsect {
-  max-width: 320px;
+  max-width: 441px;
   position: absolute;
-  top: 30%;
-  right: 0;
+  top: 13%;
+  right: -45%;
   z-index: -1;
-  filter: blur(1px);
 }
 
 .welcomeImageSlide {

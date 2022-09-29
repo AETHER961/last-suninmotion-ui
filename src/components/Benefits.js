@@ -93,9 +93,8 @@ const Benefits = () => {
                   <div className="col-10">
                     {scrollIndex === 0 && (
                       <p className={`benefitDesc `}>
-                        Lorem ipsum dolor sit amet. Ut repellendus iusto ,Lorem
-                        ipsum dolor sit amet. Ut repellendus iusto.Lorem ipsum
-                        sitamet. Ut repellendus iusto .
+                        Residual income for all NFT holders generated from the
+                        SOLIM solar PV projects deployed in the real world.
                       </p>
                     )}
                   </div>
@@ -123,9 +122,10 @@ const Benefits = () => {
                   <div className="col-10">
                     {scrollIndex === 1 && (
                       <p className={`benefitDesc `}>
-                        Lorem ipsum dolor sit amet. Ut repellendus iusto ,Lorem
-                        ipsum dolor sit amet. Ut repellendus iusto.Lorem ipsum
-                        sitamet. Ut repellendus iusto .
+                        A chance to be a part of the only utility based NFT
+                        project that will be giving back to people in fuel
+                        crisis by building Solar PV plants that will generate
+                        energy for those in need globally.
                       </p>
                     )}
                   </div>
@@ -153,9 +153,7 @@ const Benefits = () => {
                   <div className="col-10">
                     {scrollIndex === 2 && (
                       <p className={`benefitDesc`}>
-                        Lorem ipsum dolor sit amet. Ut repellendus iusto ,Lorem
-                        ipsum dolor sit amet. Ut repellendus iusto.Lorem ipsum
-                        sitamet. Ut repellendus iusto .
+                        Exclusive access to the P2E game and SOLIM metaverse
                       </p>
                     )}
                   </div>
@@ -183,9 +181,9 @@ const Benefits = () => {
                   <div className="col-10">
                     {scrollIndex === 3 && (
                       <p className={`benefitDesc`}>
-                        Lorem ipsum dolor sit amet. Ut repellendus iusto ,Lorem
-                        ipsum dolor sit amet. Ut repellendus iusto.Lorem ipsum
-                        sitamet. Ut repellendus iusto .
+                        Access to events on renewable energy and climate change
+                        with celebrities and influencers who share our vision
+                        for a brighter future.
                       </p>
                     )}
                   </div>
@@ -208,3 +206,5 @@ const Benefits = () => {
 };
 
 export default Benefits;
+
+//fifth benefit : Quarterly prize drops to the community in the form of tech, solar pv systems for your home and other merchandise supplied by our partners and sponsors.
