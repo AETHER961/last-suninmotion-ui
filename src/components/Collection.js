@@ -12,12 +12,17 @@ const Collection = () => {
   const { isMobile } = useMobileType();
 
   useEffect(() => {
-    let slides = document.querySelectorAll(".collSliderItemContainer");
+    let sliderFirst = document.querySelector(".slick-center");
+    sliderFirst.getElementsByTagName("img")[0].classList.add("op-1");
+  }, []);
+
+  useEffect(() => {
     let images = document.querySelectorAll(".collSlideImage");
-    !isMobile &&
-      slides.forEach((item, i) => (item.style.marginTop = `${i * 70}px`));
+    let sliderFirst = document.querySelector(".slick-center");
+
     images.forEach((img) => {
       img.addEventListener("mouseenter", () => {
+        sliderFirst.getElementsByTagName("img")[0].classList.remove("op-1");
         img.style.opacity = 1;
       });
       img.addEventListener("mouseleave", () => {
@@ -29,12 +34,19 @@ const Collection = () => {
   var settings = {
     dots: false,
     arrows: false,
-    infinite: false,
+    infinite: true,
     speed: 500,
+    centerMode: true,
+    // centerPadding: "60px",
     slidesToShow: 4,
-    slidesToScroll: 1,
-    initialSlide: 1,
+    swipeToSlide: true,
     responsive: [
+      {
+        breakpoint: 1900,
+        settings: {
+          slidesToShow: 5,
+        },
+      },
       {
         breakpoint: 1400,
         settings: {
@@ -63,11 +75,12 @@ const Collection = () => {
     { bg: "bg4", img: Img4 },
     { bg: "bg5", img: Img5 },
     { bg: "bg1", img: Img1 },
+    { bg: "bg2", img: Img2 },
   ];
 
   return (
     <div id="collectionSection" className="collectionSection position-relative">
-      <div className="position-absolute text-end collHeaderText">
+      <div className="text-end collHeaderText">
         <h1>
           Released
           <br /> Collection
@@ -85,9 +98,10 @@ const Collection = () => {
               className={`collSliderItemContainer ${item.bg}`}
             >
               <img
+                id={`sliderFirst${i}`}
                 src={item.img}
                 loading="lazy"
-                className="collSlideImage"
+                className={`collSlideImage`}
                 alt={`collection Image + ${i}`}
               />
             </div>

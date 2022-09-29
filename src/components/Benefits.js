@@ -4,6 +4,7 @@ import fly from "../assets/insects/solim.png";
 
 const Benefits = () => {
   const [scrollIndex, setScrollingIndex] = useState(0);
+  const [sectionOffset, setSectionOffset] = useState(null);
   var fired = false;
   var accRowIndex = 0;
   var completeOneRound = false;
@@ -20,7 +21,7 @@ const Benefits = () => {
   const handleScroll = () => {
     let benefitsSection = document.getElementById("benefitsSection");
 
-    if (accRowIndex === 3) {
+    if (accRowIndex === 4) {
       completeOneRound = true;
       window.removeEventListener("wheel", preventDefault, { passive: false });
       benefitsSection.removeEventListener("wheel", handleScroll, {
@@ -28,7 +29,7 @@ const Benefits = () => {
       });
     } else {
       if (!fired) {
-        if (accRowIndex >= 0 && accRowIndex < 3) {
+        if (accRowIndex >= 0 && accRowIndex < 4) {
           accRowIndex = accRowIndex + 1;
           setScrollingIndex(accRowIndex);
         }
@@ -42,13 +43,22 @@ const Benefits = () => {
 
   useEffect(() => {
     let benefitsSection = document.getElementById("benefitsSection");
+    window.addEventListener("wheel", () => {
+      setSectionOffset(benefitsSection.getClientRects()[0].y);
+    });
+    console.log(sectionOffset);
+  }, [sectionOffset]);
+
+  useEffect(() => {
+    let benefitsSection = document.getElementById("benefitsSection");
+
     benefitsSection.addEventListener("mouseenter", () => {
-      !completeOneRound &&
+      if (sectionOffset < 300 && !completeOneRound) {
         window.addEventListener("wheel", preventDefault, { passive: false });
-      !completeOneRound &&
         benefitsSection.addEventListener("wheel", handleScroll, {
           passive: false,
         });
+      }
     });
     benefitsSection.addEventListener("mouseleave", () => {
       window.removeEventListener("wheel", preventDefault, { passive: false });
@@ -184,6 +194,36 @@ const Benefits = () => {
                         Access to events on renewable energy and climate change
                         with celebrities and influencers who share our vision
                         for a brighter future.
+                      </p>
+                    )}
+                  </div>
+                </div>
+              </div>
+              <div className={`benefitItem row p-0  `}>
+                <p
+                  className={`col-2 ${
+                    scrollIndex === 4 ? "benefitNbr" : "unFocusedBenefitNbr"
+                  }`}
+                >
+                  05
+                </p>
+                <p
+                  className={`col-10 p-0 ${
+                    scrollIndex === 4 ? "benefitLabel" : "unFocusedBenefitLabel"
+                  }`}
+                  onClick={() => openSectionByClick(4)}
+                >
+                  Fifth Benefit
+                </p>
+
+                <div className="row p-0">
+                  <div className="col-2 benefitNbr"></div>
+                  <div className="col-10">
+                    {scrollIndex === 4 && (
+                      <p className={`benefitDesc`}>
+                        Quarterly prize drops to the community in the form of
+                        tech, solar pv systems for your home and other
+                        merchandise supplied by our partners and sponsors.
                       </p>
                     )}
                   </div>

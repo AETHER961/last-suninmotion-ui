@@ -1,8 +1,6 @@
 import React from "react";
 import footerLogo from "../assets/footerLogo.svg";
 import arrowRight from "../assets/Vector.svg";
-import redditIcon from "../assets/reddit.svg";
-import twitterIcon from "../assets/twitter.svg";
 
 const Footer = () => {
   return (
@@ -31,17 +29,9 @@ const Footer = () => {
           </ul>
         </div>
       </div>
-      <div className="d-flex justify-content-between align-items-center pb-3">
+      <div className=" align-items-center pb-3">
         <div>
           <p className="m-0">Three Eight Six © 2022</p>
-        </div>
-        <div className="d-flex justify-content-center align-items-center gap-3">
-          <div className="socialContainer p-2 text-center">
-            <img src={redditIcon} alt="reddit" />
-          </div>
-          <div className="socialContainer p-2 text-center">
-            <img src={twitterIcon} alt="twitter" />
-          </div>
         </div>
       </div>
     </div>

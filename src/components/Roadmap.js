@@ -7,7 +7,7 @@ const Roadmap = () => {
         <div className="center-line"></div>
         <div className="row row-2">
           <section className="ps-md-5">
-            <div className="icon">Q2</div>
+            <div className="icon">Q1</div>
             <div className="details">
               <span className="roadDate">February 16, 2023</span>
               <div className="roadTitle">Quarter Title</div>
@@ -40,7 +40,7 @@ const Roadmap = () => {
         </div>
         <div className="row row-2">
           <section className="ps-md-5">
-            <div className="icon">Q2</div>
+            <div className="icon">Q3</div>
             <div className="details">
               <span className="roadDate">February 16, 2023</span>
               <div className="roadTitle">Quarter Title</div>
@@ -55,7 +55,7 @@ const Roadmap = () => {
         </div>
         <div className="row row-1">
           <section>
-            <div className="icon">Q2</div>
+            <div className="icon">Q4</div>
             <div className="detailss">
               <span className="roadDate">February 16, 2023</span>
               <div className="roadTitle">Quarter Title</div>

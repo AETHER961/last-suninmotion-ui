@@ -105,6 +105,7 @@ section {
 }
 
 @keyframes fadeIn {
+
   0%,
   100% {
     opacity: 0;
@@ -163,6 +164,9 @@ section {
 
 .benefitsSection {
   background-color: var(--dark-blue);
+  background-image: url("./assets/hexbgBen.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
   z-index: 1;
 }
 
@@ -269,12 +273,12 @@ section {
 }
 
 .collSlider {
-  margin-top: 150px;
+  margin-top: 7%;
 }
 
 .collHeaderText {
-  top: -5%;
-  right: 5%;
+  margin-top: 5%;
+  margin-right: 10%;
 }
 
 .collHeaderText h1 {
@@ -305,9 +309,21 @@ section {
   transition: all 1s ease-in-out;
 }
 
-.collSlider .slick-active img {
-  opacity: 1;
+.collectionSection .slick-track {
+  padding: 5% 0;
 }
+
+.collectionSection .slick-center {
+  transform: scale(1.2);
+}
+
+.op-1 {
+  opacity: 1 !important;
+}
+
+/* .collSlider .slick-active img {
+  opacity: 1;
+} */
 
 .bg1 {
   background-image: url("./assets/greenPill.svg");
@@ -338,6 +354,9 @@ section {
 
 .roadmapSection {
   background-color: var(--dark-blue);
+  background-image: url("./assets/hexbgBen.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
   padding: 8% 6%;
 }
 
@@ -373,7 +392,6 @@ section {
   margin: 50px auto;
   padding: 0 20px;
   position: relative;
-  background-color: #050427;
   background-size: cover;
 }
 
@@ -436,10 +454,10 @@ section {
 .center-line .scroll-icon {
   position: absolute;
   background: #050427;
-  height: 43px;
-  width: 43px;
+  height: 40px;
+  width: 40px;
   text-align: center;
-  line-height: 40px;
+  line-height: 2;
   border-radius: 50%;
   color: #f7cf86;
   border: 2px solid #f7cf86;
@@ -531,6 +549,7 @@ section {
   .wrapper {
     padding: 0;
   }
+
   .wrapper .row-1 section {
     border-radius: 5px;
     padding: 27px 20px 20px 22px;
@@ -541,6 +560,7 @@ section {
   .row-1 section {
     text-align: start;
   }
+
   .wrapper .row section::before {
     width: 20px;
   }
@@ -599,9 +619,10 @@ section {
   padding: 5rem 0;
 }
 
-.imagesDiv > div:second-child {
+.imagesDiv>div:second-child {
   gap: 3rem;
 }
+
 /* devider ************************************************************************************ */
 
 .gradientDevider {
@@ -670,22 +691,15 @@ section {
   text-align: end;
 }
 
-.socialContainer {
-  border-radius: 50%;
-  aspect-ratio: 1;
-  background-color: rgba(255, 255, 255, 0.2);
-}
 
 /* My Mints ************************************************************************************* */
 
 .mintingCardContainer {
   border-radius: 12px;
   background: url("./assets/hexbgBen.svg"),
-    linear-gradient(
-      180deg,
+    linear-gradient(180deg,
       rgba(27, 50, 49, 0.5) 0%,
-      rgba(27, 50, 49, 0.2) 100%
-    );
+      rgba(27, 50, 49, 0.2) 100%);
   flex-wrap: wrap;
   width: clamp(300px, 350px + 1vw, 420px);
   padding: 2%;
@@ -698,7 +712,7 @@ section {
 }
 
 .mintingCardImage {
-  width: clamp(10rem, 1rem + 20vw, 15rem);
+  width: clamp(180px, 250px + 1vw, 320px);
   align-self: center;
 }
 
@@ -719,11 +733,13 @@ section {
   background-color: var(--dark-blue);
 }
 
-.my-mints > div {
-  padding: 5% 11% 0;
+.my-mints>div {
+  padding: 5% 8% 0;
 }
-.my-mints > div > div {
+
+.my-mints>div>div {
   margin: auto;
+  row-gap: 15px !important;
 }
 
 .myMintsTitle {
@@ -735,20 +751,21 @@ section {
   line-height: 1.2;
   color: #ffffff;
 }
+
 .nav-connect-btn {
   cursor: pointer;
 }
+
 @media screen and (max-width: 1150px) {
   .myMintsTitle {
     margin-top: 15%;
   }
 }
+
 .explore-more {
-  background: linear-gradient(
-    180deg,
-    rgba(27, 50, 49, 0.5) 0%,
-    rgba(27, 50, 49, 0.2) 100%
-  );
+  background: linear-gradient(180deg,
+      rgba(27, 50, 49, 0.5) 0%,
+      rgba(27, 50, 49, 0.2) 100%);
   border-image: none;
   border: 0;
 }
@@ -888,6 +905,7 @@ section {
     margin-left: 12%;
   }
 }
+
 @media screen and (max-width: 1412px) {
   .benefitsRightSection {
     display: none;
@@ -919,17 +937,8 @@ section {
     padding: 0;
   }
 
-  .collSlider {
-    padding-top: 230px;
-    margin-top: 0px;
-  }
-
   .collectionSection {
     max-height: 100vh;
-  }
-
-  .collHeaderText {
-    top: 5%;
   }
 }
 
@@ -966,6 +975,20 @@ section {
     letter-spacing: 2px;
     padding: 1rem;
   }
+
+  .collSliderItemContainer img {
+    max-width: 300px;
+    margin: 20px auto;
+    padding: 20px 0;
+  }
+
+  .collSlider {
+    margin-top: 15%;
+  }
+
+  .collectionSection .slick-track {
+    padding: 15% 0;
+  }
 }
 
 /* minting Section ************************************************************************************* */
@@ -975,7 +998,7 @@ section {
   min-height: 100vh;
 }
 
-.minting-page > div {
+.minting-page>div {
   padding-top: 8%;
 }
 
@@ -990,9 +1013,13 @@ section {
     margin-top: 33%;
   }
 
-  .minting-page > div {
+  .minting-page>div {
     padding-top: 20%;
   }
+
+  /* .collSlider .slick-active img {
+    opacity: 1;
+  } */
 }
 
 .mintingBoxContainer {
@@ -1004,11 +1031,9 @@ section {
 }
 
 .mintingLeftBox {
-  background: linear-gradient(
-    180deg,
-    rgba(27, 50, 49, 0.5) 0%,
-    rgba(27, 50, 49, 0.2) 100%
-  );
+  background: linear-gradient(180deg,
+      rgba(27, 50, 49, 0.5) 0%,
+      rgba(27, 50, 49, 0.2) 100%);
   backdrop-filter: blur(46px);
   border-radius: 16px;
   margin: 12% 12% 12% 12%;
@@ -1029,11 +1054,11 @@ section {
   color: rgba(255, 255, 255, 0.62);
 }
 
-.mintingLeftBox:first-child > div {
+.mintingLeftBox:first-child>div {
   align-self: center;
 }
 
-.mintingLeftBox:first-child > div > button {
+.mintingLeftBox:first-child>div>button {
   background-color: #163049;
   border-radius: 48px;
   font-family: avenir-next-regular;
@@ -1044,12 +1069,12 @@ section {
   color: white;
 }
 
-.mintingLeftBox:first-child > div > div {
+.mintingLeftBox:first-child>div>div {
   margin-left: auto;
   margin-right: auto;
 }
 
-.mintingLeftBox:first-child > div > div > p {
+.mintingLeftBox:first-child>div>div>p {
   font-family: sf-compact;
   font-size: clamp(3rem, 3rem + 2vw, 5rem);
   background-color: linear-gradient(#9bc354, #50ae98);
