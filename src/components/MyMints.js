@@ -14,7 +14,7 @@ const MyMints = ({ setBgDark }) => {
         <>
           <div>
             <p className="myMintsTitle">My Mints</p>
-            <div className="d-flex align-items-center justify-content-space-around gap-3 flex-wrap">
+            <div className="d-flex align-items-center justify-content-around gap-5 flex-wrap">
               <MintCard Img={Img} />
               <MintCard Img={Img} />
               <MintCard Img={Img} />

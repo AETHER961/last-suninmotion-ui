@@ -208,7 +208,7 @@ const Minting = () => {
   return (
     <div className="minting-page">
       <div className="row m-0 w-100">
-        <div className="mintingBoxContainer col-12 col-md-5 d-flex flex-column justify-content-center">
+        <div className="mintingBoxContainer col-12 col-md-5 d-flex flex-column justify-content-center align-items-center">
           <div className="p-4 mintingLeftBox">
             <h1>Mint a firefly</h1>
             <p className="m-0">

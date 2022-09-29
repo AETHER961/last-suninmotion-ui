@@ -10,7 +10,7 @@ const Team = () => {
           Lorem ipsum dolor sit amet. Ut repellendus.
         </span>
       </div>
-      <div className="row m-0">
+      <div className="imagesDiv">
         <div className="col-12 col-md-6 col-lg-4 text-center">
           <img src={zalme} alt="zalme" className="zalmeImage" />
           <p className="zalmeName mt-3">Member Name</p>

@@ -174,13 +174,13 @@ section {
 .bluePill {
   top: 0;
   right: 0;
-  width: clamp(300px, 600px + 1vw, 700px);
+  width: clamp(300px, 602px + 6vw, 728px);
   z-index: -1;
 }
 
 .benefitsFly {
-  width: clamp(300px, 550px + 2vw, 700px);
-  margin-left: 15%;
+  width: clamp(300px, 563px + 2vw, 727px);
+  margin-left: 29%;
 }
 
 .scrollabaleArea {
@@ -352,7 +352,7 @@ section {
   font-family: SF_Compact;
   font-style: normal;
   font-weight: 656;
-  font-size: clamp(30px, 35px + 1vw, 56px);
+  font-size: clamp(30px, 35px + 1vw, 38px);
   line-height: 1.5;
   color: #ffffff;
 }
@@ -407,7 +407,7 @@ section {
 .wrapper .row-2 section {
   border-radius: 5px;
   width: calc(50% - 40px);
-  padding: 20px;
+  padding: 27px 20px 20px 20px;
   position: relative;
   min-height: auto;
 }
@@ -415,8 +415,7 @@ section {
 .wrapper .row section::before {
   position: absolute;
   content: "";
-  height: 1px;
-  width: 15px;
+  height: 2px;
   background: #f7cf86;
   top: 40px;
   width: 40px;
@@ -434,8 +433,8 @@ section {
 .center-line .scroll-icon {
   position: absolute;
   background: #050427;
-  height: 40px;
-  width: 40px;
+  height: 43px;
+  width: 43px;
   text-align: center;
   line-height: 40px;
   border-radius: 50%;
@@ -498,7 +497,7 @@ section {
 
 @media (max-width: 790px) {
   .wrapper .center-line {
-    left: 40px;
+    left: 22px;
   }
 
   .wrapper .row {
@@ -526,15 +525,21 @@ section {
     justify-content: space-between;
   }
 
+  .wrapper {
+    padding: 0;
+  }
   .wrapper .row-1 section {
     border-radius: 5px;
-    padding: 20px;
+    padding: 27px 20px 20px 22px;
     position: relative;
     min-height: auto;
   }
 
   .row-1 section {
     text-align: start;
+  }
+  .wrapper .row section::before {
+    width: 20px;
   }
 }
 
@@ -584,6 +589,16 @@ section {
   color: var(--gray);
 }
 
+.imagesDiv {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 5rem 0;
+}
+
+.imagesDiv > div:second-child {
+  gap: 3rem;
+}
 /* devider ************************************************************************************ */
 
 .gradientDevider {
@@ -676,6 +691,7 @@ section {
   border-image-slice: 1;
   min-height: 450px;
   color: rgba(255, 255, 255, 0.62);
+  cursor: pointer;
 }
 
 .mintingCardImage {
@@ -703,6 +719,9 @@ section {
 .my-mints > div {
   padding: 5% 11% 0;
 }
+.my-mints > div > div {
+  margin: auto;
+}
 
 .myMintsTitle {
   margin-top: 5%;
@@ -713,7 +732,14 @@ section {
   line-height: 1.2;
   color: #ffffff;
 }
-
+.nav-connect-btn {
+  cursor: pointer;
+}
+@media screen and (max-width: 1150px) {
+  .myMintsTitle {
+    margin-top: 15%;
+  }
+}
 .explore-more {
   background: linear-gradient(
     180deg,
@@ -852,7 +878,14 @@ section {
   .welcomeBgPill img {
     max-width: 380px;
   }
+}
 
+@media screen and (max-width: 1180px) {
+  .benefitsFly {
+    margin-left: 12%;
+  }
+}
+@media screen and (max-width: 1412px) {
   .benefitsRightSection {
     display: none;
   }
@@ -869,11 +902,10 @@ section {
   }
 
   .storyImage {
-    bottom: -50px;
+    top: 60%;
     right: 50%;
     transform: translateX(50%);
     max-width: 100%;
-    filter: blur(5px);
   }
 
   .footerUsefulLinks {
@@ -977,7 +1009,7 @@ section {
   backdrop-filter: blur(46px);
   border-radius: 16px;
   margin: 12% 12% 12% 12%;
-  max-width: 400px;
+  max-width: 478px;
 }
 
 .mintingLeftBox h1 {

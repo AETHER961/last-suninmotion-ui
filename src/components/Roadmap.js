@@ -13,9 +13,10 @@ const Roadmap = () => {
               <div className="roadTitle">Quarter Title</div>
             </div>
             <p className="roadDesc">
-              This is a small description about what is going ot happen in this
-              particular time of the year, what are you doing to let your fans
-              do.
+              Launch the Solim NFT and give our community the chance to Mint a
+              one of a kind NFT that will give them access to exciting Prizes,
+              Tokens, Events and residual income from the sustainable projects
+              built by the SOLIM Project and later on a P2E game.
             </p>
           </section>
         </div>
@@ -27,9 +28,13 @@ const Roadmap = () => {
               <div className="roadTitle">Quarter Title</div>
             </div>
             <p className="roadDesc">
-              This is a small description about what is going ot happen in this
-              particular time of the year, what are you doing to let your fans
-              do.
+              Build our first Solar PV projects that will enable holders of the
+              SOLIM NFT to receive a residual income monthly and also donate 20%
+              of the SOLIM project proceeds to build charitable projects for
+              countries facing fuel poverty in order to ensure thy have access
+              to clean and reliable energy. We will target schools, Hospitals
+              and any other infrastructure necessary to ensure these communities
+              are protected.
             </p>
           </section>
         </div>
@@ -41,9 +46,10 @@ const Roadmap = () => {
               <div className="roadTitle">Quarter Title</div>
             </div>
             <p className="roadDesc">
-              This is a small description about what is going ot happen in this
-              particular time of the year, what are you doing to let your fans
-              do.
+              Begin development of the Exclusive open world P2E game that will
+              capture the true essence of the SOLIM project connecting the
+              community to the real projects built by the SOLIM project in the
+              metaverse.
             </p>
           </section>
         </div>
@@ -55,9 +61,10 @@ const Roadmap = () => {
               <div className="roadTitle">Quarter Title</div>
             </div>
             <p className="roadDesc">
-              This is a small description about what is going ot happen in this
-              particular time of the year, what are you doing to let your fans
-              do.
+              Will see the mint of the next generation of SOLIM NFTs that will
+              bring increased residual income from Projects built by the SOLIM
+              project to holders of the NFT and continue to donate significant
+              proceeds to the charitable foundations we will be partnering with.
             </p>
           </section>
         </div>
