@@ -83,6 +83,19 @@ const Welcome = () => {
             </button>
             <img src={solim} alt="solim" className="mobileWelcomeInsect" />
           </div>
+          <div className="scroll-section">
+            <a href="#footerSection">
+              <img src={scroll} alt="scroll" />
+            </a>
+            <a href="#footerSection">
+              <p
+                className="m-0"
+                style={{ position: "absolute", marginLeft: "20px" }}
+              >
+                SCROLL DOWN
+              </p>
+            </a>
+          </div>
         </div>
       )}
     </section>
