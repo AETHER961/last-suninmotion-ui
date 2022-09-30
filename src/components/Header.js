@@ -31,8 +31,59 @@ const Header = () => {
     });
   }, []);
 
+  useEffect(() => {
+    const sideNavigation = document.querySelector(".sideNavigation");
+    let sideLinks = sideNavigation.querySelectorAll("li");
+    sideLinks.forEach((item, i) => {
+      item.addEventListener("click", function () {
+        document.querySelector(".selected").classList.remove("selected");
+        switch (i) {
+          case 0:
+            sideLinks[0].classList.toggle("selected");
+            window.location.href = "#welcomeSection";
+            break;
+          case 1:
+            sideLinks[1].classList.toggle("selected");
+            window.location.href = "#storySection";
+            break;
+          case 2:
+            sideLinks[2].classList.toggle("selected");
+            window.location.href = "#benefitsSection";
+            break;
+          case 3:
+            sideLinks[3].classList.toggle("selected");
+            window.location.href = "#collectionSection";
+            break;
+          case 4:
+            sideLinks[4].classList.toggle("selected");
+            window.location.href = "#roadmapSection";
+            break;
+          case 5:
+            sideLinks[5].classList.toggle("selected");
+            window.location.href = "#teamSection";
+            break;
+          case 6:
+            sideLinks[6].classList.toggle("selected");
+            window.location.href = "#footerSection";
+            break;
+          default:
+            window.location.href = "#welcomeSection";
+        }
+      });
+    });
+  }, []);
+
   return (
     <>
+      <ul className="sideNavigation" dir="rtl">
+        <li className="selected"></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
       <Navbar
         key={false}
         className={`my-navbar ${withBg ? "nav-bg" : ""}`}

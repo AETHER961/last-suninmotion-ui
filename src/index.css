@@ -314,12 +314,17 @@ section {
   padding: 5% 0;
 }
 
-.collectionSection .slick-center {
+/* .collectionSection .slick-center {
   transform: scale(1.2);
-}
+} */
 
 .op-1 {
   opacity: 1 !important;
+  margin-left: -15% !important;
+}
+
+.scaleP2 {
+  transform: scale(1.2) rotate(-14.5deg) !important;
 }
 
 /* .collSlider .slick-active img {
@@ -979,7 +984,6 @@ section {
   }
 
   .collSliderItemContainer img {
-    max-width: 300px;
     margin: 20px auto;
     padding: 20px 0;
   }

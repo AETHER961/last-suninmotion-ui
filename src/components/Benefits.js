@@ -46,7 +46,6 @@ const Benefits = () => {
     window.addEventListener("wheel", () => {
       setSectionOffset(benefitsSection.getClientRects()[0].y);
     });
-    console.log(sectionOffset);
   }, [sectionOffset]);
 
   useEffect(() => {

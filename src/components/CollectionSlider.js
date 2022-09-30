@@ -1,22 +1,36 @@
 import React from "react";
-import Img1 from "../assets/insects/1.png";
-import Img2 from "../assets/insects/2.png";
-import Img3 from "../assets/insects/3.png";
-import Img4 from "../assets/insects/4.png";
-import Img5 from "../assets/insects/5.png";
+import Slider from "react-slick";
 
-const CollectionSlider = () => {
-  const items = [Img1, Img2, Img3, Img4, Img5];
+const CollectionSlider = ({ items }) => {
+  var settings = {
+    dots: false,
+    arrows: false,
+    infinite: true,
+    speed: 500,
+    centerMode: true,
+    slidesToShow: 1,
+    swipeToSlide: true,
+  };
+
   return (
-    <div className="collSlider d-flex">
+    <Slider id="collSlider" className="collSlider" {...settings}>
       {items.map((item, i) => {
         return (
-          <div key={i} className="collSliderItemContainer">
-            <img src={item} alt={"item" + i} />
+          <div
+            key={`collection Image + ${i}`}
+            className={`collSliderItemContainer ${item.bg}`}
+          >
+            <img
+              id={`sliderFirst${i}`}
+              src={item.img}
+              loading="lazy"
+              className={`collSlideImage`}
+              alt={`collection Image + ${i}`}
+            />
           </div>
         );
       })}
-    </div>
+    </Slider>
   );
 };
 

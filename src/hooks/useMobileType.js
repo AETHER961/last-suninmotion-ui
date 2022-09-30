@@ -4,6 +4,7 @@ export default function useMobileType() {
   const [isMobile, setMobile] = useState(false);
 
   useEffect(() => {
+    window.screen.width < 500 ? setMobile(true) : setMobile(false);
     window.addEventListener("resize", () => {
       if (window.screen.width < 500) {
         setMobile(true);
@@ -11,7 +12,7 @@ export default function useMobileType() {
         setMobile(false);
       }
     });
-  });
+  }, []);
 
   return { isMobile };
 }

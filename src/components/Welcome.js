@@ -9,7 +9,10 @@ const Welcome = () => {
   const navigate = useNavigate();
 
   return (
-    <section className="welcomeSection px-2 position-relative">
+    <section
+      id="welcomeSection"
+      className="welcomeSection px-2 position-relative"
+    >
       {!isMobile ? (
         <div className="row m-0">
           <div className="col-6 p-0">

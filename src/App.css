@@ -8,11 +8,15 @@ html {
   src: url('./assets/fonts/avenir-next-regular.otf');
 }
 
+.App {
+  overflow: hidden;
+}
+
 .my-navbar {
   height: 10vh;
   background-color: transparent;
   padding: 3% 5% !important;
-  width: 100%;
+  max-width: 100vw;
 }
 
 .my-navbar .container-fluid {
@@ -83,4 +87,42 @@ html {
   border-radius: 50%;
   aspect-ratio: 1;
   background-color: rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+
+.sideNavigation {
+  display: block;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  right: 1vw;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.sideNavigation li {
+  width: 10px;
+  height: 3px;
+  margin: 40px 20px;
+  right: 20px;
+  cursor: pointer;
+  transition: transform 0.2s;
+  mix-blend-mode: lighten;
+  background-color: gray;
+}
+
+.sideNavigation li:hover,
+.sideNavigation li.selected {
+  background: #fff;
+  width: 30px;
+}
+
+@media screen and (max-width: 600px) {
+  .sideNavigation {
+    display: none;
+  }
 }
