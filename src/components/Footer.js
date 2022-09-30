@@ -4,7 +4,7 @@ import arrowRight from "../assets/Vector.svg";
 
 const Footer = () => {
   return (
-    <div className="footer row m-0">
+    <div id="footerSection" className="footer row m-0">
       <div className="col-12 col-md-6">
         <img src={footerLogo} alt="footerLogo" className="mb-5" />
         <h2>Subscribe to our newsletter</h2>

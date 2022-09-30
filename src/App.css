@@ -5,7 +5,7 @@ html {
 
 @font-face {
   font-family: AvenirNext;
-  src: url('./assets/fonts/avenir-next-regular.otf');
+  src: url("./assets/fonts/avenir-next-regular.otf");
 }
 
 .my-navbar {
@@ -83,4 +83,5 @@ html {
   border-radius: 50%;
   aspect-ratio: 1;
   background-color: rgba(0, 0, 0, 0.3);
+  cursor: pointer;
 }

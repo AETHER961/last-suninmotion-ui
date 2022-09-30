@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import useMobileType from "../hooks/useMobileType";
 import FadingSlider from "./FadingSlider";
 import solim from "../assets/insects/solim.png";
+import scroll from "../assets/scroll.png";
 
 const Welcome = () => {
   const { isMobile } = useMobileType();
@@ -39,6 +40,19 @@ const Welcome = () => {
           </div>
           <div className="col-6 p-0">
             <FadingSlider />
+          </div>
+          <div className="scroll-section">
+            <a href="#footerSection">
+              <img src={scroll} alt="scroll" />
+            </a>
+            <a href="#footerSection">
+              <p
+                className="m-0"
+                style={{ position: "absolute", marginLeft: "20px" }}
+              >
+                SCROLL DOWN
+              </p>
+            </a>
           </div>
         </div>
       ) : (
