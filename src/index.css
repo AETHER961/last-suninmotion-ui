@@ -105,7 +105,6 @@ section {
 }
 
 @keyframes fadeIn {
-
   0%,
   100% {
     opacity: 0;
@@ -150,6 +149,8 @@ section {
   font-size: clamp(10px, 12px + 1vw, 24px);
   line-height: clamp(16px, 24px + 1vw, 38px);
   color: var(--gray);
+  max-width: 480px;
+  display: block;
 }
 
 .storyText {
@@ -403,7 +404,7 @@ section {
 
 .wrapper .center-line {
   position: absolute;
-  height: 76%;
+  height: 76.5%;
   width: 2.5px;
   background: #f7cf86;
   left: 50%;
@@ -625,7 +626,7 @@ section {
   padding: 5rem 0;
 }
 
-.imagesDiv>div:second-child {
+.imagesDiv > div:second-child {
   gap: 3rem;
 }
 
@@ -697,15 +698,17 @@ section {
   text-align: end;
 }
 
-
 /* My Mints ************************************************************************************* */
 
 .mintingCardContainer {
   border-radius: 12px;
   background: url("./assets/hexbgBen.svg"),
-    linear-gradient(180deg,
+    linear-gradient(
+      180deg,
       rgba(27, 50, 49, 0.5) 0%,
-      rgba(27, 50, 49, 0.2) 100%);
+      rgba(27, 50, 49, 0.2) 100%
+    );
+  background-size: cover;
   flex-wrap: wrap;
   width: clamp(300px, 350px + 1vw, 420px);
   padding: 2%;
@@ -739,11 +742,11 @@ section {
   background-color: var(--dark-blue);
 }
 
-.my-mints>div {
+.my-mints > div {
   padding: 5% 8% 0;
 }
 
-.my-mints>div>div {
+.my-mints > div > div {
   margin: auto;
   row-gap: 15px !important;
 }
@@ -767,11 +770,15 @@ section {
     margin-top: 15%;
   }
 }
-
+.no-mints {
+  background-color: rgba(255, 255, 255, 0.04);
+}
 .explore-more {
-  background: linear-gradient(180deg,
-      rgba(27, 50, 49, 0.5) 0%,
-      rgba(27, 50, 49, 0.2) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(27, 50, 49, 0.5) 0%,
+    rgba(27, 50, 49, 0.2) 100%
+  );
   border-image: none;
   border: 0;
 }
@@ -800,7 +807,8 @@ section {
 }
 
 .no-mints img {
-  margin-bottom: 3rem !important;
+  /* margin-bottom: 3rem !important; */
+  max-width: 88px;
 }
 
 .p-no-mints {
@@ -819,7 +827,17 @@ section {
 
 .mint-now {
   font-weight: 700;
-  font-size: clamp(12px, 14px + 1vw, 25px);
+  font-size: clamp(12px, 14px + 1vw, 20px);
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  color: white !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: avenir-next-regular;
+  border-radius: 3rem !important;
+}
+.mint-now img {
+  margin-left: 1rem;
 }
 
 /* media queries ************************************************************************************* */
@@ -1004,7 +1022,7 @@ section {
   min-height: 100vh;
 }
 
-.minting-page>div {
+.minting-page > div {
   padding-top: 8%;
 }
 
@@ -1019,7 +1037,7 @@ section {
     margin-top: 33%;
   }
 
-  .minting-page>div {
+  .minting-page > div {
     padding-top: 20%;
   }
 
@@ -1037,9 +1055,11 @@ section {
 }
 
 .mintingLeftBox {
-  background: linear-gradient(180deg,
-      rgba(27, 50, 49, 0.5) 0%,
-      rgba(27, 50, 49, 0.2) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(27, 50, 49, 0.5) 0%,
+    rgba(27, 50, 49, 0.2) 100%
+  );
   backdrop-filter: blur(46px);
   border-radius: 16px;
   margin: 12% 12% 12% 12%;
@@ -1060,11 +1080,11 @@ section {
   color: rgba(255, 255, 255, 0.62);
 }
 
-.mintingLeftBox:first-child>div {
+.mintingLeftBox:first-child > div {
   align-self: center;
 }
 
-.mintingLeftBox:first-child>div>button {
+.mintingLeftBox:first-child > div > button {
   background-color: #163049;
   border-radius: 48px;
   font-family: avenir-next-regular;
@@ -1075,12 +1095,12 @@ section {
   color: white;
 }
 
-.mintingLeftBox:first-child>div>div {
+.mintingLeftBox:first-child > div > div {
   margin-left: auto;
   margin-right: auto;
 }
 
-.mintingLeftBox:first-child>div>div>p {
+.mintingLeftBox:first-child > div > div > p {
   font-family: sf-compact;
   font-size: clamp(3rem, 3rem + 2vw, 5rem);
   background-color: linear-gradient(#9bc354, #50ae98);
@@ -1162,4 +1182,20 @@ section {
 
 .mintingSolim {
   max-width: 500px;
+}
+.scroll-section {
+  position: absolute;
+  left: 50px;
+  bottom: 50px;
+  display: flex;
+  align-items: end;
+}
+
+.scroll-section a p {
+  color: rgba(255, 255, 255, 0.32);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  font-family: Avenir;
+  margin-left: 20px !important;
 }

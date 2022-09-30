@@ -12,8 +12,8 @@ const Story = () => {
             <br /> of Solim
           </h1>
           <span className="storySubTitle mb-5">
-            Lorem ipsum dolor sit amet. Ut repellendus
-            <br /> iusto aut nihil eligendaut. dolor expedita.
+            Lorem ipsum dolor sit amet. Ut repellendus iusto aut nihil
+            eligendaut. dolor expedita.
           </span>
           <p className="fs-4 mt-5 storyText">
             Project Solim takes place in year 3860 in a world where mother

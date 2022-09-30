@@ -1,12 +1,15 @@
 import React, { useState, useEffect } from "react";
 import "../index.css";
+import { useNavigate } from "react-router-dom";
 import Img from "../assets/insects/solim.png";
 import emptyBox from "../assets/emptyBox.svg";
 import plusIcon from "../assets/plus.svg";
+import Verctorbutton from "../assets/Vector-nomints.svg";
 import MintCard from "./MintCard";
 
 const MyMints = ({ setBgDark }) => {
   const [mints, setMints] = useState(true);
+  const navigate = useNavigate();
 
   return (
     <section className="my-mints d-flex flex-column">
@@ -14,7 +17,7 @@ const MyMints = ({ setBgDark }) => {
         <>
           <div>
             <p className="myMintsTitle">My Mints</p>
-            <div className="d-flex align-items-center justify-content-around gap-2 flex-wrap">
+            <div className="d-flex align-items-center justify-content-around gap-5 flex-wrap">
               <MintCard Img={Img} />
               <MintCard Img={Img} />
               <MintCard Img={Img} />
@@ -33,15 +36,17 @@ const MyMints = ({ setBgDark }) => {
       ) : (
         //no mints
         <div>
-          <p className="m-0">My Mints</p>
-          <div
-            className="no-mints d-flex flex-column"
-            style={{ backgroundColor: "blue" }}
-          >
+          <p className="myMintsTitle">My Mints</p>
+          <div className="no-mints d-flex flex-column align-items-center justify-content-between">
             <img src={emptyBox} alt="emptyBox" />
             <p className="p-no-mints">No mints here.</p>
             <p className="p-you-didnt">You didn’t mint any NFT.</p>
-            <button className="btn mint-now">MINT NOW</button>
+            <button
+              className="btn mint-now"
+              onClick={() => navigate("/minting")}
+            >
+              MINT NOW <img src={Verctorbutton} alt="vector" />
+            </button>
           </div>
         </div>
       )}
