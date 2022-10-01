@@ -17,8 +17,10 @@ const Collection = () => {
 
     if (sliderFirst) {
       sliderFirst.getElementsByTagName("img")[0].classList.add("op-1");
-      !isMobile &&
+      if (!isMobile) {
         sliderFirst.getElementsByTagName("img")[1].classList.add("scaleP2");
+        document.getElementById("collectionSection").style.paddingBottom = "5%";
+      }
     }
   }, [isMobile]);
 
