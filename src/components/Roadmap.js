@@ -2,7 +2,7 @@ import React from "react";
 
 const Roadmap = () => {
   return (
-    <section id="roadmapSection" className="roadmapSection">
+    <section id="roadmapSection" className="roadmapSection my-page-section">
       <h1 className="benefitsTitle">Road Map</h1>
       <span className="benefitsSubTitle">
         Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet..

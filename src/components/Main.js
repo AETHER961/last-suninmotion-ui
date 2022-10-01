@@ -10,7 +10,7 @@ import Roadmap from "./Roadmap";
 
 const Main = () => {
   return (
-    <section className="mainSection">
+    <div className="mainSection">
       <Welcome />
       <Story />
       <Benefits />
@@ -19,7 +19,7 @@ const Main = () => {
       <Team />
       <GradientDevider />
       <Footer />
-    </section>
+    </div>
   );
 };
 

@@ -70,7 +70,7 @@ const Benefits = () => {
   return (
     <section
       id="benefitsSection"
-      className="benefitsSection px-2 position-relative"
+      className="benefitsSection px-2 position-relative my-page-section"
     >
       <div className="row m-0">
         <div className="col-12 col-md-6 p-0">

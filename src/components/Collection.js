@@ -63,7 +63,10 @@ const Collection = () => {
   ];
 
   return (
-    <div id="collectionSection" className="collectionSection position-relative">
+    <section
+      id="collectionSection"
+      className="collectionSection position-relative my-page-section"
+    >
       <div className="text-end collHeaderText">
         <h1>
           Released
@@ -79,7 +82,7 @@ const Collection = () => {
       ) : (
         <CollectionSliderRotated items={items} />
       )}
-    </div>
+    </section>
   );
 };
 

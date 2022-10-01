@@ -12,7 +12,7 @@ const Welcome = () => {
   return (
     <section
       id="welcomeSection"
-      className="welcomeSection px-2 position-relative"
+      className="welcomeSection px-2 position-relative my-page-section"
     >
       {!isMobile ? (
         <div className="row m-0">

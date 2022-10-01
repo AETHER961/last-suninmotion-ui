@@ -71,6 +71,19 @@ const Header = () => {
         }
       });
     });
+    window.addEventListener("wheel", function () {
+      const sections = document.querySelectorAll(".my-page-section");
+      let scrollTop = window.scrollY;
+      sections.forEach(function (section, i) {
+        if (
+          section.offsetTop < scrollTop + window.innerHeight / 2 &&
+          scrollTop < section.offsetTop + window.innerHeight / 2
+        ) {
+          document.querySelector(".selected").classList.remove("selected");
+          sideLinks[i]?.classList.add("selected");
+        }
+      });
+    });
   }, []);
 
   return (
