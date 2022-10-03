@@ -5,7 +5,7 @@ html {
 
 @font-face {
   font-family: AvenirNext;
-  src: url('./assets/fonts/avenir-next-regular.otf');
+  src: url("./assets/fonts/avenir-next-regular.otf");
 }
 
 .App {
@@ -46,7 +46,7 @@ html {
 }
 
 .nav-bg {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: #050427;
 }
 
 .offcanvasLinksContainer .offTitle {
@@ -90,7 +90,6 @@ html {
   cursor: pointer;
   cursor: pointer;
 }
-
 
 .sideNavigation {
   display: block;

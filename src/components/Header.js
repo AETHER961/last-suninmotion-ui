@@ -10,7 +10,6 @@ const Header = () => {
   const [show, setShow] = useState(false);
   const [withBg, setWithBg] = useState(false);
   const [showConnect, setShowConnect] = useState(true);
-
   const [clicked, setClicked] = useState(9);
 
   const onClick = (index) => {
