@@ -258,11 +258,6 @@ const Minting = () => {
           </div>
         </div>
       </div>
-      <img src={Img1} alt="" />
-      <img src={Img2} alt="" />
-      <img src={Img3} alt="" />
-      <img src={Img4} alt="" />
-      <img src={Img5} alt="" />
     </div>
   );
 };
