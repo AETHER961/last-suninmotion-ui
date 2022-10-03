@@ -86,17 +86,13 @@ const Benefits = () => {
             </span>
             <div className="scrollabaleArea">
               <div className="benefitItem row p-0">
-                <p className={`col-2 `}>
-                  <img
-                    src={n01}
-                    alt="n01"
-                    className={`${
-                      scrollIndex === 0
-                        ? "benefitNbrImg"
-                        : "unFocusedBenefitNbrImg"
-                    }`}
-                  />
-                </p>
+                <div className={`col-2 `}>
+                  {scrollIndex === 0 ? (
+                    <img src={n01} alt="n01" className="benefitNbrImg" />
+                  ) : (
+                    <p className="unFocusedBenefitNbr">01</p>
+                  )}
+                </div>
                 <p
                   className={`col-10 p-0 ${
                     scrollIndex === 0 ? "benefitLabel" : "unFocusedBenefitLabel"
@@ -119,17 +115,13 @@ const Benefits = () => {
                 </div>
               </div>
               <div className={`benefitItem row p-0 `}>
-                <p className={`col-2  `}>
-                  <img
-                    src={n02}
-                    alt="n02"
-                    className={`${
-                      scrollIndex === 1
-                        ? "benefitNbrImg"
-                        : "unFocusedBenefitNbrImg"
-                    }`}
-                  />
-                </p>
+                <div className={`col-2 `}>
+                  {scrollIndex === 1 ? (
+                    <img src={n02} alt="n02" className="benefitNbrImg" />
+                  ) : (
+                    <p className="unFocusedBenefitNbr">02</p>
+                  )}
+                </div>
                 <p
                   className={`col-10 p-0 ${
                     scrollIndex === 1 ? "benefitLabel" : "unFocusedBenefitLabel"
@@ -154,17 +146,13 @@ const Benefits = () => {
                 </div>
               </div>
               <div className={`benefitItem row p-0  `}>
-                <p className={`col-2 `}>
-                  <img
-                    src={n03}
-                    alt="n03"
-                    className={`${
-                      scrollIndex === 2
-                        ? "benefitNbrImg"
-                        : "unFocusedBenefitNbrImg"
-                    }`}
-                  />
-                </p>
+                <div className={`col-2 `}>
+                  {scrollIndex === 2 ? (
+                    <img src={n03} alt="n03" className="benefitNbrImg" />
+                  ) : (
+                    <p className="unFocusedBenefitNbr">03</p>
+                  )}
+                </div>
                 <p
                   className={`col-10 p-0 ${
                     scrollIndex === 2 ? "benefitLabel" : "unFocusedBenefitLabel"
@@ -186,17 +174,13 @@ const Benefits = () => {
                 </div>
               </div>
               <div className={`benefitItem row p-0  `}>
-                <p className={`col-2`}>
-                  <img
-                    src={n04}
-                    alt="n04"
-                    className={`${
-                      scrollIndex === 3
-                        ? "benefitNbrImg"
-                        : "unFocusedBenefitNbrImg"
-                    }`}
-                  />
-                </p>
+                <div className={`col-2 `}>
+                  {scrollIndex === 3 ? (
+                    <img src={n04} alt="n04" className="benefitNbrImg" />
+                  ) : (
+                    <p className="unFocusedBenefitNbr">04</p>
+                  )}
+                </div>
                 <p
                   className={`col-10 p-0 ${
                     scrollIndex === 3 ? "benefitLabel" : "unFocusedBenefitLabel"
@@ -220,17 +204,13 @@ const Benefits = () => {
                 </div>
               </div>
               <div className={`benefitItem row p-0  `}>
-                <p className={`col-2 `}>
-                  <img
-                    src={n05}
-                    alt="n05"
-                    className={`${
-                      scrollIndex === 4
-                        ? "benefitNbrImg"
-                        : "unFocusedBenefitNbrImg"
-                    }`}
-                  />
-                </p>
+                <div className={`col-2 `}>
+                  {scrollIndex === 4 ? (
+                    <img src={n05} alt="n05" className="benefitNbrImg" />
+                  ) : (
+                    <p className="unFocusedBenefitNbr">05</p>
+                  )}
+                </div>
                 <p
                   className={`col-10 p-0 ${
                     scrollIndex === 4 ? "benefitLabel" : "unFocusedBenefitLabel"

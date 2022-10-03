@@ -197,22 +197,8 @@ section {
   margin-top: 15%;
 }
 
-.benefitNbr {
-  font-size: clamp(25px, 30px + 1vw, 48px);
-  font-weight: 700;
-  background: -webkit-linear-gradient(#76dbb3, #69bcf1);
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  line-height: 1;
-}
-
 .benefitNbrImg {
   max-width: 70px;
-}
-
-.unFocusedBenefitNbrImg {
-  max-width: 40px;
 }
 
 .unFocusedBenefitNbr {
