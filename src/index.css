@@ -53,6 +53,7 @@ section {
   font-size: 12rem;
   line-height: 1;
   margin-top: 30%;
+  padding-left: 24%;
 }
 
 .mintyourown {
@@ -69,6 +70,7 @@ section {
   border-radius: 50px;
   border: none;
   padding: 1rem 1.5rem;
+  margin-left: 24%;
 }
 
 .mintyourown p {
@@ -149,7 +151,7 @@ section {
   font-size: clamp(10px, 12px + 1vw, 24px);
   line-height: clamp(16px, 24px + 1vw, 38px);
   color: var(--gray);
-  max-width: 480px;
+  max-width: 695px;
   display: block;
 }
 
@@ -845,18 +847,30 @@ section {
 @media screen and (max-width: 1600px) {
   .hello-text {
     font-size: 14rem;
+    padding-left: 0;
+  }
+  .mintyourown {
+    margin-left: 0;
   }
 }
 
 @media screen and (max-width: 1400px) {
   .hello-text {
     font-size: 12rem;
+    padding-left: 0;
+  }
+  .mintyourown {
+    margin-left: 0;
   }
 }
 
 @media screen and (max-width: 1200px) {
   .hello-text {
     font-size: 12rem;
+    padding-left: 0;
+  }
+  .mintyourown {
+    margin-left: 0;
   }
 
   .benefitsFly {
@@ -868,6 +882,10 @@ section {
   .hello-text {
     font-size: 10rem;
     margin-top: 40%;
+    padding-left: 0;
+  }
+  .mintyourown {
+    margin-left: 0;
   }
 
   .welcomeSliderContainer {
@@ -886,6 +904,10 @@ section {
 @media screen and (max-width: 850px) {
   .hello-text {
     margin-top: 45%;
+    padding-left: 0;
+  }
+  .mintyourown {
+    margin-left: 0;
   }
 
   .welcomeSliderContainer {
@@ -909,6 +931,10 @@ section {
   .hello-text {
     font-size: 10rem;
     margin-top: 50%;
+    padding-left: 0;
+  }
+  .mintyourown {
+    margin-left: 0;
   }
 
   .welcomeSliderContainer {
@@ -940,6 +966,10 @@ section {
   .hello-text {
     font-size: 8rem;
     margin-top: 50%;
+    padding-left: 0;
+  }
+  .mintyourown {
+    margin-left: 0;
   }
 
   .welcomeSliderContainer {
@@ -977,6 +1007,10 @@ section {
   .hello-text {
     font-size: 7rem;
     margin-top: 65%;
+    padding-left: 0;
+  }
+  .mintyourown {
+    margin-left: 0;
   }
 
   .footer {
@@ -999,6 +1033,7 @@ section {
   .mintyourown {
     letter-spacing: 2px;
     padding: 1rem;
+    margin-left: 0;
   }
 
   .collSliderItemContainer img {

@@ -15,19 +15,17 @@ const Story = () => {
             <br /> of Solim
           </h1>
           <span className="storySubTitle mb-5">
-            Lorem ipsum dolor sit amet. Ut repellendus iusto aut nihil
-            eligendaut. dolor expedita.
-          </span>
-          <p className="fs-4 mt-5 storyText">
             Project Solim takes place in year 3860 in a world where mother
             nature has taken back the earth after devastating weather events
-            have ravaged mankind due to climate change. Small factions of humans
-            have managed to survive and see SOLIM our firefly as the beacon of
-            light that will guide them to building a new civilisation!
-            Unfortunately the path to illumination and this new world is
-            inhabited by fierce Apex predators and the Animal Kingdom has taken
-            back areas once occupied by humans which has left humans in the dark
-            ages unable to build a new era for human kind.
+            have ravaged mankind due to climate change.
+          </span>
+          <p className="fs-4 mt-5 storyText">
+            Small factions of humans have managed to survive and see SOLIM our
+            firefly as the beacon of light that will guide them to building a
+            new civilisation! Unfortunately the path to illumination and this
+            new world is inhabited by fierce Apex predators and the Animal
+            Kingdom has taken back areas once occupied by humans which has left
+            humans in the dark ages unable to build a new era for human kind.
           </p>
           <p className="fs-4 storyText">
             The buildings and areas our human factions want to call home possess

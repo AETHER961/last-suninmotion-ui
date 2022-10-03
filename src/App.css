@@ -101,7 +101,9 @@ html {
   top: 50%;
   transform: translateY(-50%);
   z-index: 999;
-  background-color: rgba(0, 0, 0, 0.3);
+  /* background-color: rgba(0, 0, 0, 0.3); */
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50px;
 }
 
 .sideNavigation li {
