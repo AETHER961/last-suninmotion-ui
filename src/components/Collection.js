@@ -8,7 +8,7 @@ import Img5 from "../assets/insects/5.png";
 import useMobileType from "../hooks/useMobileType";
 import CollectionSlider from "./CollectionSlider";
 import CollectionSliderRotated from "./CollectionSliderRotated";
-
+import Bg1 from "../assets/dynaic.svg";
 const Collection = () => {
   const { isMobile } = useMobileType();
 
@@ -53,7 +53,7 @@ const Collection = () => {
   }, [isMobile]);
 
   const items = [
-    { bg: "bg1", img: Img1 },
+    { bg: "bg1", img: Img1, backgrounds: Bg1 },
     { bg: "bg2", img: Img2 },
     { bg: "bg3", img: Img3 },
     { bg: "bg4", img: Img4 },

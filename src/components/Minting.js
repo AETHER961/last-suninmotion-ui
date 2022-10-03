@@ -3,6 +3,11 @@ import mintingSolim from "../assets/mintingSolim.svg";
 import Slider from "react-slick";
 import abi from "../constants/abi";
 import { ethers } from "ethers";
+import Img1 from "../assets/insects/1.png";
+import Img2 from "../assets/insects/2.png";
+import Img3 from "../assets/insects/3.png";
+import Img4 from "../assets/insects/4.png";
+import Img5 from "../assets/insects/5.png";
 
 const Minting = () => {
   const [amount, setAmount] = useState(1);
@@ -253,6 +258,11 @@ const Minting = () => {
           </div>
         </div>
       </div>
+      <img src={Img1} alt="" />
+      <img src={Img2} alt="" />
+      <img src={Img3} alt="" />
+      <img src={Img4} alt="" />
+      <img src={Img5} alt="" />
     </div>
   );
 };

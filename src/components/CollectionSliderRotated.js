@@ -71,7 +71,7 @@ const CollectionSliderRotated = ({ items }) => {
                     alt="over svg fly"
                   />
                   <img
-                    src={orangePill}
+                    src={item.backgrounds}
                     className="slider-svg sliderBgOrange"
                     loading="lazy"
                     alt="slider-svg"
