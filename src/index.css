@@ -105,6 +105,7 @@ section {
 }
 
 @keyframes fadeIn {
+
   0%,
   100% {
     opacity: 0;
@@ -204,6 +205,14 @@ section {
   -webkit-background-clip: text;
   -moz-background-clip: text;
   line-height: 1;
+}
+
+.benefitNbrImg {
+  max-width: 70px;
+}
+
+.unFocusedBenefitNbrImg {
+  max-width: 40px;
 }
 
 .unFocusedBenefitNbr {
@@ -626,7 +635,7 @@ section {
   padding: 5rem 0;
 }
 
-.imagesDiv > div:second-child {
+.imagesDiv>div:second-child {
   gap: 3rem;
 }
 
@@ -703,11 +712,9 @@ section {
 .mintingCardContainer {
   border-radius: 12px;
   background: url("./assets/hexbgBen.svg"),
-    linear-gradient(
-      180deg,
+    linear-gradient(180deg,
       rgba(27, 50, 49, 0.5) 0%,
-      rgba(27, 50, 49, 0.2) 100%
-    );
+      rgba(27, 50, 49, 0.2) 100%);
   background-size: cover;
   flex-wrap: wrap;
   width: clamp(300px, 350px + 1vw, 420px);
@@ -742,11 +749,11 @@ section {
   background-color: var(--dark-blue);
 }
 
-.my-mints > div {
+.my-mints>div {
   padding: 5% 8% 0;
 }
 
-.my-mints > div > div {
+.my-mints>div>div {
   margin: auto;
   row-gap: 15px !important;
 }
@@ -770,15 +777,15 @@ section {
     margin-top: 15%;
   }
 }
+
 .no-mints {
   background-color: rgba(255, 255, 255, 0.04);
 }
+
 .explore-more {
-  background: linear-gradient(
-    180deg,
-    rgba(27, 50, 49, 0.5) 0%,
-    rgba(27, 50, 49, 0.2) 100%
-  );
+  background: linear-gradient(180deg,
+      rgba(27, 50, 49, 0.5) 0%,
+      rgba(27, 50, 49, 0.2) 100%);
   border-image: none;
   border: 0;
 }
@@ -836,6 +843,7 @@ section {
   font-family: avenir-next-regular;
   border-radius: 3rem !important;
 }
+
 .mint-now img {
   margin-left: 1rem;
 }
@@ -1022,7 +1030,7 @@ section {
   min-height: 100vh;
 }
 
-.minting-page > div {
+.minting-page>div {
   padding-top: 8%;
 }
 
@@ -1037,7 +1045,7 @@ section {
     margin-top: 33%;
   }
 
-  .minting-page > div {
+  .minting-page>div {
     padding-top: 20%;
   }
 
@@ -1055,11 +1063,9 @@ section {
 }
 
 .mintingLeftBox {
-  background: linear-gradient(
-    180deg,
-    rgba(27, 50, 49, 0.5) 0%,
-    rgba(27, 50, 49, 0.2) 100%
-  );
+  background: linear-gradient(180deg,
+      rgba(27, 50, 49, 0.5) 0%,
+      rgba(27, 50, 49, 0.2) 100%);
   backdrop-filter: blur(46px);
   border-radius: 16px;
   margin: 12% 12% 12% 12%;
@@ -1080,11 +1086,11 @@ section {
   color: rgba(255, 255, 255, 0.62);
 }
 
-.mintingLeftBox:first-child > div {
+.mintingLeftBox:first-child>div {
   align-self: center;
 }
 
-.mintingLeftBox:first-child > div > button {
+.mintingLeftBox:first-child>div>button {
   background-color: #163049;
   border-radius: 48px;
   font-family: avenir-next-regular;
@@ -1095,12 +1101,12 @@ section {
   color: white;
 }
 
-.mintingLeftBox:first-child > div > div {
+.mintingLeftBox:first-child>div>div {
   margin-left: auto;
   margin-right: auto;
 }
 
-.mintingLeftBox:first-child > div > div > p {
+.mintingLeftBox:first-child>div>div>p {
   font-family: sf-compact;
   font-size: clamp(3rem, 3rem + 2vw, 5rem);
   background-color: linear-gradient(#9bc354, #50ae98);
@@ -1183,6 +1189,7 @@ section {
 .mintingSolim {
   max-width: 500px;
 }
+
 .scroll-section {
   position: absolute;
   left: 50px;
