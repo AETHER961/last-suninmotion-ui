@@ -76,8 +76,8 @@ const Collection = () => {
           <br /> Collection
         </h1>
         <p>
-          Lorem ipsum dolor sit amet. Ut
-          <br /> .repellendus iusto aut nihil
+          A glimmer of light, complete with
+          <br /> outfits and accessories.
         </p>
       </div>
       {isMobile ? (

@@ -14,7 +14,7 @@ const Roadmap = () => {
             <div className="icon">Q1</div>
             <div className="details">
               <span className="roadDate">February 16, 2023</span>
-              <div className="roadTitle">Quarter Title</div>
+              <div className="roadTitle">First Quarter</div>
             </div>
             <p className="roadDesc">
               Launch the Solim NFT and give our community the chance to Mint a
@@ -28,8 +28,8 @@ const Roadmap = () => {
           <section>
             <div className="icon">Q2</div>
             <div className="detailss">
-              <span className="roadDate">February 16, 2023</span>
-              <div className="roadTitle">Quarter Title</div>
+              <span className="roadDate">April 16, 2023</span>
+              <div className="roadTitle">Second Quarter</div>
             </div>
             <p className="roadDesc">
               Build our first Solar PV projects that will enable holders of the
@@ -46,8 +46,8 @@ const Roadmap = () => {
           <section className="ps-md-5">
             <div className="icon">Q3</div>
             <div className="details">
-              <span className="roadDate">February 16, 2023</span>
-              <div className="roadTitle">Quarter Title</div>
+              <span className="roadDate">July 16, 2023</span>
+              <div className="roadTitle">Third Quarter</div>
             </div>
             <p className="roadDesc">
               Begin development of the Exclusive open world P2E game that will
@@ -61,8 +61,8 @@ const Roadmap = () => {
           <section>
             <div className="icon">Q4</div>
             <div className="detailss">
-              <span className="roadDate">February 16, 2023</span>
-              <div className="roadTitle">Quarter Title</div>
+              <span className="roadDate">October 16, 2023</span>
+              <div className="roadTitle">Fourth Quarter</div>
             </div>
             <p className="roadDesc">
               Will see the mint of the next generation of SOLIM NFTs that will

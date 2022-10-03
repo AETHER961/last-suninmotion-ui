@@ -138,7 +138,7 @@ const Benefits = () => {
                       <p className={`benefitDesc `}>
                         A chance to be a part of the only utility based NFT
                         project that will be giving back to people in fuel
-                        crisis by building Solar PV plants that will generate
+                        crisis by building solar PV plants that will generate
                         energy for those in need globally.
                       </p>
                     )}
@@ -167,7 +167,7 @@ const Benefits = () => {
                   <div className="col-10">
                     {scrollIndex === 2 && (
                       <p className={`benefitDesc`}>
-                        Exclusive access to the P2E game and SOLIM metaverse
+                        Exclusive access to the P2E game and SOLIM metaverse.
                       </p>
                     )}
                   </div>
