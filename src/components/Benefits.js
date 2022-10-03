@@ -94,7 +94,7 @@ const Benefits = () => {
                   )}
                 </div>
                 <p
-                  className={`col-10 p-0 ${
+                  className={`col-10  ${
                     scrollIndex === 0 ? "benefitLabel" : "unFocusedBenefitLabel"
                   }`}
                   onClick={() => openSectionByClick(0)}
@@ -123,7 +123,7 @@ const Benefits = () => {
                   )}
                 </div>
                 <p
-                  className={`col-10 p-0 ${
+                  className={`col-10   ${
                     scrollIndex === 1 ? "benefitLabel" : "unFocusedBenefitLabel"
                   }`}
                   onClick={() => openSectionByClick(1)}
@@ -154,7 +154,7 @@ const Benefits = () => {
                   )}
                 </div>
                 <p
-                  className={`col-10 p-0 ${
+                  className={`col-10   ${
                     scrollIndex === 2 ? "benefitLabel" : "unFocusedBenefitLabel"
                   }`}
                   onClick={() => openSectionByClick(2)}
@@ -182,7 +182,7 @@ const Benefits = () => {
                   )}
                 </div>
                 <p
-                  className={`col-10 p-0 ${
+                  className={`col-10   ${
                     scrollIndex === 3 ? "benefitLabel" : "unFocusedBenefitLabel"
                   }`}
                   onClick={() => openSectionByClick(3)}
@@ -212,7 +212,7 @@ const Benefits = () => {
                   )}
                 </div>
                 <p
-                  className={`col-10 p-0 ${
+                  className={`col-10   ${
                     scrollIndex === 4 ? "benefitLabel" : "unFocusedBenefitLabel"
                   }`}
                   onClick={() => openSectionByClick(4)}
