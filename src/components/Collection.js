@@ -9,6 +9,10 @@ import useMobileType from "../hooks/useMobileType";
 import CollectionSlider from "./CollectionSlider";
 import CollectionSliderRotated from "./CollectionSliderRotated";
 import Bg1 from "../assets/dynaic.svg";
+import Bg2 from "../assets/dynaicc.svg";
+import Bg3 from "../assets/dynaiccc.svg";
+import Bg4 from "../assets/dynaicccc.svg";
+import Bg5 from "../assets/dynaiccccc.svg";
 const Collection = () => {
   const { isMobile } = useMobileType();
 
@@ -54,12 +58,12 @@ const Collection = () => {
 
   const items = [
     { bg: "bg1", img: Img1, backgrounds: Bg1 },
-    { bg: "bg2", img: Img2 },
-    { bg: "bg3", img: Img3 },
-    { bg: "bg4", img: Img4 },
-    { bg: "bg5", img: Img5 },
-    { bg: "bg1", img: Img1 },
-    { bg: "bg2", img: Img2 },
+    { bg: "bg2", img: Img2, backgrounds: Bg2 },
+    { bg: "bg3", img: Img3, backgrounds: Bg3 },
+    { bg: "bg4", img: Img4, backgrounds: Bg4 },
+    { bg: "bg5", img: Img5, backgrounds: Bg5 },
+    { bg: "bg1", img: Img1, backgrounds: Bg1 },
+    { bg: "bg2", img: Img2, backgrounds: Bg2 },
   ];
 
   return (
