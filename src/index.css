@@ -327,9 +327,22 @@ section {
 
 .op-1 {
   opacity: 1 !important;
-  margin-left: -15% !important;
+  margin-left: -0% !important;
 }
 
+@media (max-width: 436px) {
+  .op-1 {
+    opacity: 1 !important;
+    margin-left: -7% !important;
+  }
+}
+
+@media (max-width: 408px) {
+  .op-1 {
+    opacity: 1 !important;
+    margin-left: -15% !important;
+  }
+}
 .scaleP2 {
   transform: scale(1.2) rotate(-14.5deg) !important;
 }

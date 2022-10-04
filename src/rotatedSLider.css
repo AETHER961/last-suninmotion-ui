@@ -1,92 +1,107 @@
 * {
-    outline: 0 !important;
+  outline: 0 !important;
 }
 
 .carousel-main {
-    position: relative;
-    /* overflow: hidden; */
+  position: relative;
+  /* overflow: hidden; */
 }
 
-
 .releasedcollection-main {
-    transform: rotate(14.5deg);
-    margin: 5rem -10rem 0 -10rem;
+  transform: rotate(14.5deg);
+  margin: 5rem -10rem 0 -10rem;
 }
 
 .normal-one {
-    top: 0;
+  top: 0;
 }
 
 .slider-title {
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 4% 11%;
-    display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 4% 11%;
+  display: flex;
 }
 
 .slider-title h1 {
-    font-weight: 800;
-    font-family: avenir-regular;
-    font-size: clamp(2.25rem, 2.25rem + 2vw, 5.5rem);
-    text-align: right;
+  font-weight: 800;
+  font-family: avenir-regular;
+  font-size: clamp(2.25rem, 2.25rem + 2vw, 5.5rem);
+  text-align: right;
 }
 
 .slider-title p {
-    font-weight: 500;
-    font-family: avenir-regular;
-    font-size: clamp(1rem, 1rem + 1vw, 1.5rem);
-    text-align: right;
-    color: #828193;
+  font-weight: 500;
+  font-family: avenir-regular;
+  font-size: clamp(1rem, 1rem + 1vw, 1.5rem);
+  text-align: right;
+  color: #828193;
 }
 
 .normal-one div svg {
-    transform: rotate(-15deg);
+  transform: rotate(-15deg);
 }
 
 .slide-wrapper {
-    position: relative;
+  position: relative;
 }
 
 .slider-svg {
-    margin-top: 2rem;
-    height: 100%;
-    width: 200px;
-    z-index: 0;
-    transform: rotate(-14.5deg);
+  margin-top: 2rem;
+  height: 100%;
+  width: 200px;
+  z-index: 0;
+  transform: rotate(-14.5deg);
 }
 
 .showOverallImage {
-    visibility: visible;
-    opacity: 1;
-    transition: all 0.5s ease-in-out;
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.5s ease-in-out;
 }
 
 .scaleBgOverallImage {
-    transform: rotate(-14.5deg) scale(1.1);
-    transition: all 0.5s ease-in-out;
+  transform: rotate(-14.5deg) scale(1.1);
+  transition: all 0.5s ease-in-out;
 }
 
 .sliderBgOrange {
-    transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .hiddenOverallImg {
-    /* visibility: hidden; */
-    opacity: 0;
-    scale: 1.1;
+  /* visibility: hidden; */
+  opacity: 0;
+  scale: 1.1;
 }
 
 #overall-svg {
-    position: absolute;
-    left: -45%;
-    width: 550px;
-    top: -13%;
-    transform: rotate(-7deg);
-    transition: all 0.5s ease-in-out;
-    z-index: 1000;
+  position: absolute;
+  left: -39%;
+  width: 550px;
+  top: -9%;
+  transform: rotate(-7deg);
+  transition: all 0.5s ease-in-out;
+  z-index: 1000;
+}
+
+@media (max-width: 1250px) {
+  #overall-svg {
+    left: -46%;
+    width: 530px;
+    top: -9%;
+  }
+}
+
+@media (max-width: 1000px) {
+  #overall-svg {
+    left: -52%;
+    width: 500px;
+    top: -2%;
+  }
 }
 
 .collectionSection .slick-track {
-    padding: 5% 0;
+  padding: 5% 0;
 }
