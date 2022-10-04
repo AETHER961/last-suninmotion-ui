@@ -78,15 +78,17 @@
 
 #overall-svg {
   position: absolute;
-  left: -39%;
+  left: -0;
   width: 550px;
-  top: -9%;
-  transform: rotate(-7deg);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  transform: translate(-27%, -8%) rotate(-7deg);
   transition: all 0.5s ease-in-out;
   z-index: 1000;
 }
 
-@media (min-width: 1700px) {
+/* @media (min-width: 1700px) {
   #overall-svg {
     left: -32%;
     width: 530px;
@@ -116,7 +118,7 @@
     width: 500px;
     top: -2%;
   }
-}
+} */
 
 .collectionSection .slick-track {
   padding: 5% 0;
