@@ -82,7 +82,7 @@ const Benefits = () => {
           <div className="accordionSection">
             <h1 className="benefitsTitle">Benefits</h1>
             <span className="benefitsSubTitle">
-              Lorem ipsum dolor sit amet. Ut repellendus iusto.
+              An NFT project that gives back to you and Mother Nature.
             </span>
             <div className="scrollabaleArea">
               <div className="benefitItem row p-0">

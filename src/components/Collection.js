@@ -76,8 +76,8 @@ const Collection = () => {
           <br /> Collection
         </h1>
         <p>
-          A glimmer of light, complete with
-          <br /> outfits and accessories.
+          A glimmer of light, scroll to see the collection,
+          <br /> complete with accessories and outfits.
         </p>
       </div>
       {isMobile ? (

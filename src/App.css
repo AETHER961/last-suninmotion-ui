@@ -108,7 +108,7 @@ html {
 
 .sideNavigation li {
   width: 10px;
-  height: 3px;
+  height: 4px;
   margin: 40px 20px;
   right: 20px;
   cursor: pointer;
@@ -119,7 +119,7 @@ html {
 
 .sideNavigation li:hover,
 .sideNavigation li.selected {
-  background: #fff;
+  background: #43648b;
   width: 30px;
 }
 

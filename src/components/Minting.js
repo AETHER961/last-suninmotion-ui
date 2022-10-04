@@ -137,7 +137,7 @@ const Minting = () => {
     setAmount(amount + 1);
   };
   const decreaseAmount = () => {
-    amount > 0 && setAmount(amount - 1);
+    amount != 1 && setAmount(amount - 1);
   };
   function SampleNextArrow(props) {
     const { className, style, onClick } = props;
@@ -211,6 +211,7 @@ const Minting = () => {
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
   };
+
   return (
     <div className="minting-page">
       <div className="row m-0 w-100">

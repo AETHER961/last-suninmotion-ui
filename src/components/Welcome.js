@@ -16,7 +16,7 @@ const Welcome = () => {
     >
       {!isMobile ? (
         <div className="row m-0">
-          <div className="col-6 p-0">
+          <div className="col-7 p-0">
             <h1 className="hello-text">
               Hello
               <br />
@@ -41,7 +41,7 @@ const Welcome = () => {
               </svg>
             </button>
           </div>
-          <div className="col-6 p-0">
+          <div className="col-5 p-0">
             <FadingSlider />
           </div>
           <div className="scroll-section">

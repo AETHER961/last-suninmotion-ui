@@ -10,7 +10,7 @@ const Team = () => {
       <div className="row m-0 pb-0">
         <h1 className="teamTitle">The Team</h1>
         <span className="teamSubTitle">
-          Lorem ipsum dolor sit amet. Ut repellendus.
+          The humans bringing Solim to light.
         </span>
       </div>
       <div className="imagesDiv">

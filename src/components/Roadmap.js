@@ -4,9 +4,7 @@ const Roadmap = () => {
   return (
     <section id="roadmapSection" className="roadmapSection my-page-section">
       <h1 className="benefitsTitle">Road Map</h1>
-      <span className="benefitsSubTitle">
-        Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet..
-      </span>
+      <span className="benefitsSubTitle">A journey lit by Solim.</span>
       <div id="roadmap" className="wrapper my-pagination-section hiveBg">
         <div className="center-line"></div>
         <div className="row row-2">
