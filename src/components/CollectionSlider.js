@@ -7,7 +7,7 @@ const CollectionSlider = ({ items }) => {
     arrows: false,
     infinite: true,
     speed: 500,
-    autoplay: true,
+    autoplay: false,
     centerMode: true,
     slidesToShow: 1,
     swipeToSlide: true,

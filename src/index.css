@@ -1002,9 +1002,6 @@ section {
   }
 
   .storyImage {
-    /* top: 60%;
-    right: 50%;
-    transform: translateX(50%); */
     position: relative;
     max-width: 100%;
   }
