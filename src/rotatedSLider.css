@@ -88,15 +88,15 @@
 
 @media (min-width: 1700px) {
   #overall-svg {
-    left: -31%;
+    left: -32%;
     width: 530px;
     top: -9%;
   }
 }
 
-@media (min-width: 1700px) {
+@media (min-width: 1600px) {
   #overall-svg {
-    left: -31%;
+    left: -37%;
     width: 530px;
     top: -9%;
   }
