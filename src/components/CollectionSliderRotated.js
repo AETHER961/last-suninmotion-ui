@@ -26,6 +26,12 @@ const CollectionSliderRotated = ({ items }) => {
     pauseOnHover: false,
     responsive: [
       {
+        breakpoint: 2500,
+        settings: {
+          slidesToShow: 5,
+        },
+      },
+      {
         breakpoint: 1900,
         settings: {
           slidesToShow: 5,
