@@ -280,6 +280,11 @@ section {
   min-height: 100vh;
 }
 
+@media (max-width: 500px) {
+  .collectionSection {
+    padding-bottom: 3rem;
+  }
+}
 .collSlider {
   margin-top: 7%;
 }
@@ -1019,6 +1024,14 @@ section {
   }
 }
 
+.text-div {
+  padding: 0 0 10% 10vw !important;
+}
+@media (max-width: 1000px) {
+  .text-div {
+    padding: 0 10% !important;
+  }
+}
 /*mobile*/
 @media screen and (max-width: 500px) {
   .welcomeSection {

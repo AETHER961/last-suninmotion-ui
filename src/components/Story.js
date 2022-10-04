@@ -6,10 +6,10 @@ const Story = () => {
   return (
     <section
       id="storySection"
-      className="storySection px-2 position-relative my-page-section"
+      className="storySection px-0 position-relative my-page-section"
     >
-      <div className="row m-0">
-        <div className="col-12 col-lg-7 col-xl-8 px-0 pb-5">
+      <div className="row m-0 px-0">
+        <div className="text-div col-12 col-lg-7 col-xl-8 ">
           <h1 className="storyTitle">
             The Story
             <br /> of Solim
