@@ -352,23 +352,23 @@ section {
 } */
 
 .bg1 {
-  background-image: url("./assets/greenPill.svg");
+  background-image: url("./assets/dynaic.svg");
 }
 
 .bg2 {
-  background-image: url("./assets/orangePill.svg");
+  background-image: url("./assets/dynaicc.svg");
 }
 
 .bg3 {
-  background-image: url("./assets/darkbluePill.svg");
+  background-image: url("./assets/dynaiccc.svg");
 }
 
 .bg4 {
-  background-image: url("./assets/lightbluePill.svg");
+  background-image: url("./assets/dynaicccc.svg");
 }
 
 .bg5 {
-  background-image: url("./assets/violetPill.svg");
+  background-image: url("./assets/dynaiccccc.svg");
 }
 
 .collSliderItemContainer img {
