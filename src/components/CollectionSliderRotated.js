@@ -18,9 +18,10 @@ const CollectionSliderRotated = ({ items }) => {
   var settings = {
     infinite: true,
     dots: false,
-    autoplay: false,
+    autoplay: true,
     speed: 400,
     slidesToShow: 4,
+
     swipeToSlide: true,
     centerMode: true,
     pauseOnHover: false,

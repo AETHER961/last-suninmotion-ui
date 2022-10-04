@@ -104,7 +104,7 @@ const Header = () => {
       >
         <Container fluid>
           <Navbar.Brand href="#">
-            <img src={logo} alt="alt" />
+            <img src={logo} className="logo-image" alt="alt" />
           </Navbar.Brand>
           <Navbar id={`offcanvasNavbar-expand-sm`}>
             <Nav className=" ms-auto my-lg-0">

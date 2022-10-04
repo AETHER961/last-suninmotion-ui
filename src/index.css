@@ -686,7 +686,9 @@ section {
 .footer li {
   list-style: none;
 }
-
+.fixed-top {
+  height: 102px;
+}
 .footerEmailField {
   position: relative;
   background-color: rgba(255, 255, 255, 0.2);
