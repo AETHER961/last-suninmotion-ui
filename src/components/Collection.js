@@ -63,6 +63,7 @@ const Collection = () => {
     { bg: "bg3", img: Img2, backgrounds: Bg3 },
     { bg: "bg4", img: Img3, backgrounds: Bg4 },
     { bg: "bg5", img: Img4, backgrounds: Bg5 },
+    { bg: "bg3", img: Img2, backgrounds: Bg3 },
   ];
 
   return (
