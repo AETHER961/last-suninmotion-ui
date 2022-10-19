@@ -18,17 +18,17 @@ const Team = () => {
       </div>
       <div className="imagesDiv">
         <div className="col-12 col-md-6 col-lg-4 text-center">
-          <img src={ahmad} alt="zalme" className="zalmeImage" />
+          <img src={ahmad} alt="zalme" className="zalmeImage" style={{borderRadius: '50%'}} />
           <p className="zalmeName mt-3">Ahmad Al Khayat</p>
           <p className="zalmejob">Chairman at Three Eight Six</p>
         </div>
         <div className="col-12 col-md-6 col-lg-4 text-center">
           <img src={zalme} alt="zalme" className="zalmeImage" />
-          <p className="zalmeName mt-3">Stephen </p>
+          <p className="zalmeName mt-3">Molden Stephens</p>
           <p className="zalmejob">Founder</p>
         </div>
         <div className="col-12 col-md-6 col-lg-4 text-center ">
-          <img src={steve} alt="zalme" className="zalmeImage" />
+          <img src={steve} alt="zalme" className="zalmeImage" style={{borderRadius: '50%'}} />
           <p className="zalmeName mt-3">Steve Cleveland</p>
           <p className="zalmejob">
             Chief Executive Officer at Three Eight Six LLC
