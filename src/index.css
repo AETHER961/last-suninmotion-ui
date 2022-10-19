@@ -625,6 +625,14 @@ section {
   width: clamp(200px, 250px + 1vw, 350px);
 }
 
+.image-cropper {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
 .zalmeName {
   font-family: Avenir;
   font-style: normal;

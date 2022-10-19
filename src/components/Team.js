@@ -1,5 +1,8 @@
 import React from "react";
 import zalme from "../assets/zalme.png";
+import aether from "../assets/Aether.png";
+import steve from "../assets/Steve.jpg";
+import ahmad from "../assets/Ahmad.jpg";
 
 const Team = () => {
   return (
@@ -15,19 +18,26 @@ const Team = () => {
       </div>
       <div className="imagesDiv">
         <div className="col-12 col-md-6 col-lg-4 text-center">
-          <img src={zalme} alt="zalme" className="zalmeImage" />
-          <p className="zalmeName mt-3">Member Name</p>
-          <p className="zalmejob">Job Title</p>
+          <img src={ahmad} alt="zalme" className="zalmeImage" />
+          <p className="zalmeName mt-3">Ahmad Al Khayat</p>
+          <p className="zalmejob">Chairman at Three Eight Six</p>
         </div>
         <div className="col-12 col-md-6 col-lg-4 text-center">
           <img src={zalme} alt="zalme" className="zalmeImage" />
-          <p className="zalmeName mt-3">Member Name</p>
-          <p className="zalmejob">Job Title</p>
+          <p className="zalmeName mt-3">Stephen </p>
+          <p className="zalmejob">Founder</p>
+        </div>
+        <div className="col-12 col-md-6 col-lg-4 text-center ">
+          <img src={steve} alt="zalme" className="zalmeImage" />
+          <p className="zalmeName mt-3">Steve Cleveland</p>
+          <p className="zalmejob">
+            Chief Executive Officer at Three Eight Six LLC
+          </p>
         </div>
         <div className="col-12 col-md-6 col-lg-4 text-center">
-          <img src={zalme} alt="zalme" className="zalmeImage" />
-          <p className="zalmeName mt-3">Member Name</p>
-          <p className="zalmejob">Job Title</p>
+          <img src={aether} alt="zalme" className="zalmeImage" />
+          <p className="zalmeName mt-3">AETHER</p>
+          <p className="zalmejob">Technology</p>
         </div>
       </div>
     </section>
