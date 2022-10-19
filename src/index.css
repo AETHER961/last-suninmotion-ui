@@ -654,7 +654,7 @@ section {
 .imagesDiv {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: start;
   padding: 5rem 0;
 }
 
